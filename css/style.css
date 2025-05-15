@@ -1,11 +1,11 @@
-@import url('./css/reset.css');
-@import url('./css/main.css');
-@import url('./css/variables.css');
-@import url('./css/font.css');
+@import url('./reset.css');
+@import url('./font.css');
+@import url('./root.css');
+/* @import url('./css/main.css'); */
+/* @import url('./css/variables.css'); */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 20px;
+  font-family: var(--font-family), sans-serif;
+  color: var(--black);
+  background-color: var(--color);
 }

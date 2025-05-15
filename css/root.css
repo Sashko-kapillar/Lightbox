@@ -1,0 +1,17 @@
+:root {
+  /*шрифти*/
+  --font-family: "Inter", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Cocogoose Classic", sans-serif;
+  --font3: "Roboto", sans-serif;
+  --font4: "Circular Std", sans-serif;
+  --font5: "Poppins", sans-serif;
+
+  /* Кольори */
+  --color: #fff;
+  --color-2: #191c2f;
+  --color-3: #7d25f0;
+  --color-4: #f26522;
+  --color-5: #f7941d;
+  --black: #000;
+}
