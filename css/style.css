@@ -1,8 +1,10 @@
 @import url('./reset.css');
-@import url('./globals.css');
 @import url('./font.css');
-@import url('./root.css');
+@import url('./main.css');
+@import url('./variables.css'); /* Для змінних */
+@import url('./media.css');   /* Для медіа-запитів */
 @import url('./utils.css');   /* Для загальних стилів */
-/* @import url('./css/main.css'); */
+@import url('./header.css');   /* Для стилів header */
+@import url('./footer.css');   /* Для стилів footer */
 /* @import url('./css/variables.css'); */
 

@@ -1,0 +1,24 @@
+.header {
+    height: 48px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.header__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo__link {
+    width: 167px;
+    height: auto;
+    margin-right: 124px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+font-size: 18px;
+}
