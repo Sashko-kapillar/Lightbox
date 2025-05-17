@@ -16,6 +16,13 @@ ol[role='list'] {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
