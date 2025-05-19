@@ -10,17 +10,6 @@
 } */
 
 @font-face {
-  font-family: "Poppins";
-  src: local("Poppins Medium"), local("Poppins-Medium"),
-    url("Poppins-Medium.woff2") format("woff2"),
-    url("Poppins-Medium.woff") format("woff"),
-    url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Inter";
   src: local("Inter Regular"), local("Inter-Regular"),
     url("Inter-Regular.woff2") format("woff2"),
