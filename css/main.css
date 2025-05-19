@@ -5,8 +5,9 @@ html {
 
 body {
   font-family: var(--font3), sans-serif;
-  color: var(--black);
+  color: var(--color-7);
   background-color: var(--color);
+  font-size: normal;
 
   /* Відступи безпеки */
   padding-top: env(safe-area-inset-top);
@@ -18,8 +19,13 @@ body {
   scrollbar-gutter: stable;
 }
 
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .container {
-  width: 1480px;
+  width: 1520px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;

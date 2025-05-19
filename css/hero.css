@@ -1,0 +1,58 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background: url(../images/hero/hero_bg-W.png),
+    url(../images/hero/hero-bg_gradient.png);
+  background-size: 963px 1087px, 100% 100%; /* Розмір фону */
+  background-repeat: no-repeat, no-repeat; /* Повторення для верхнього та нижнього */
+  background-position: right, center;
+  height: 100vh;
+  padding-top: 0;
+  margin-top: -68px;
+}
+
+.hero__container {
+  display: flex;
+  margin-top: -68px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  min-width: 818px;
+  margin-right: 100px;
+}
+
+.hero__title {
+  font-family: var(--font4), sans-serif;
+  font-size: 85px;
+  line-height: 112%;
+  font-weight: 700;
+  max-width: 818px;
+  margin-bottom: 28px;
+}
+
+.hero__description {
+  display: block;
+  color: var(--color-2);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  max-width: 716px;
+  margin-bottom: 32px;
+}
+
+.hero__btn {
+  display: inline-block;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color);
+  padding: 24px 60px;
+  border-radius: 36px;
+  background: var(--color-4);
+}
+
+.hero__image {
+}

@@ -40,7 +40,6 @@
   align-items: center;
   height: 100%;
   cursor: pointer;
-  color: var(--color-2);
   transition: 0.3s;
 }
 
