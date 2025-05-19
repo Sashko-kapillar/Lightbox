@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
 body {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font3), sans-serif;
   color: var(--black);
   background-color: var(--color);
 
@@ -8,10 +13,14 @@ body {
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
+
+  /* Резервується місце для вертикальної смуги прокрутки */
+  scrollbar-gutter: stable;
 }
 
 .container {
-  max-width: 1480px;
+  width: 1480px;
   margin: 0 auto;
-  padding: 0 220px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
