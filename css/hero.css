@@ -44,7 +44,20 @@
   margin-bottom: 32px;
 }
 
-.hero__btn {
+.hero__move {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--color-2);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.hero__move--demo {
+  color: var(--color-6);
+}
+
+.hero__move--btn {
   display: inline-block;
   width: fit-content;
   font-weight: 500;
