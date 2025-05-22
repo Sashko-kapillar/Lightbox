@@ -77,6 +77,17 @@
 
 @font-face {
   font-family: "Circular Std";
+  src: local("CircularStd Book"), local("CircularStd-Book"),
+    url("CircularStd-Book.woff2") format("woff2"),
+    url("CircularStd-Book.woff") format("woff"),
+    url("../fonts/Circular/CircularStd-Book.eot") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
   src: local("CircularStd Regular"), local("CircularStd-Regular"),
     url("CircularStd-Regular.woff2") format("woff2"),
     url("CircularStd-Regular.woff") format("woff"),
@@ -91,7 +102,7 @@
   src: local("CircularStd Medium"), local("CircularStd-Medium"),
     url("CircularStd-Medium.woff2") format("woff2"),
     url("CircularStd-Medium.woff") format("woff"),
-    url("../fonts/CircularStd-Medium.eot") format("truetype");
+    url("../fonts/Circular/CircularStd-Medium.eot") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
