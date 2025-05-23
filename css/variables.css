@@ -20,4 +20,9 @@
   /*  Тіні  */
   --shadow-1: 0px -8px 50% 0px #d7e4f9;
   --shadow-2: 0 18px 53px 0 rgba(215, 228, 249, 0.5);
+  /*  image  */
+  --shadow-3: -25px 20px 44px 0 rgba(84, 48, 209, 0.4);
+  /* --shadow-5: -25px 20px 44px 0 rgba(84, 48, 209, 0.4); */
+  /*  button  */
+  --shadow-4: 0 9px 20px -3px rgba(120, 84, 247, 0.33);
 }

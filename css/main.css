@@ -54,6 +54,14 @@ h3 {
   line-height: 100%;
 }
 
+p {
+  font-family: var(--font3) sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: var(--color-2);
+}
+
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -64,4 +72,18 @@ h3 {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color);
+  padding: 22px 60px;
+  border-radius: 36px;
+  background: var(--color-4);
+  box-shadow: var(--shadow-4);
+  transition: all 0.3s ease;
 }

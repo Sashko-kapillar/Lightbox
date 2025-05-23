@@ -1,0 +1,56 @@
+.feature {
+  background: url(../images/feature/bg/bg-feature.png),
+    url("../images/feature/bg/radius.png");
+  background-size: 75% 65%, 100% 100%; /* Розмір фону */
+  background-repeat: no-repeat, no-repeat; /* Повторення для верхнього та нижнього */
+  background-position: center, center;
+  max-height: 1152px;
+  max-width: 100%;
+}
+
+.feature__container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-top: -100px;
+}
+
+.feature__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 76px;
+  margin-top: 40px;
+}
+
+.feature__content > img {
+  border-radius: 20px;
+  box-shadow: var(--shadow-3);
+}
+
+.feature__content--reverse {
+  flex-direction: row-reverse;
+  margin-left: 160px;
+  margin-top: 0;
+  align-items: start;
+}
+
+.feature__content--reverse h3 {
+  max-width: 480px;
+  padding-top: 32px;
+}
+
+.feature__text {
+  max-width: 602px;
+}
+
+.feature__text h3 {
+  color: var(--color);
+  margin-bottom: 24px;
+}
+
+.feature__text p {
+  max-width: 480px;
+  margin-bottom: 40px;
+  color: var(--color);
+}

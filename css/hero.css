@@ -56,18 +56,6 @@
   color: var(--color-6);
 }
 
-.hero__move--btn {
-  display: inline-block;
-  width: fit-content;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  color: var(--color);
-  padding: 24px 60px;
-  border-radius: 36px;
-  background: var(--color-4);
-}
-
 .hero__image {
   position: relative;
   flex: 0 0 70%;
