@@ -6,6 +6,19 @@
   background-position: center, center;
   max-height: 1152px;
   max-width: 100%;
+  display: flex;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.feature::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-8);
+  z-index: -1;
 }
 
 .feature__container {

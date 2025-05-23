@@ -15,6 +15,7 @@
   --color-5: #f7941d;
   --color-6: #5a54f2;
   --color-7: #272d4e;
+  --color-8: #231f8b;
   --black: #000;
 
   /*  Тіні  */
@@ -25,4 +26,6 @@
   /* --shadow-5: -25px 20px 44px 0 rgba(84, 48, 209, 0.4); */
   /*  button  */
   --shadow-4: 0 9px 20px -3px rgba(120, 84, 247, 0.33);
+  /*  advantages card  */
+  --shadow-5: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
 }
