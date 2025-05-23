@@ -16,4 +16,8 @@
   --color-6: #5a54f2;
   --color-7: #272d4e;
   --black: #000;
+
+  /*  Тіні  */
+  --shadow-1: 0px -8px 50% 0px #d7e4f9;
+  --shadow-2: 0 18px 53px 0 rgba(215, 228, 249, 0.5);
 }

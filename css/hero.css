@@ -1,6 +1,5 @@
 .hero {
   display: flex;
-  align-items: center;
   background: url(../images/hero/hero_bg-W.png),
     url(../images/hero/hero-bg_gradient.png);
   background-size: 50% 100%, 100% 100%; /* Розмір фону */
@@ -8,8 +7,6 @@
   background-position: right, center;
   padding-top: 0;
   margin-top: -68px;
-  margin-bottom: 96px;
-  /* padding-bottom: 0; */
   overflow: hidden;
 }
 
@@ -24,6 +21,7 @@
   flex-direction: column;
   min-width: 818px;
   margin-top: 246px;
+  min-height: 680px;
 }
 
 .hero__title {
