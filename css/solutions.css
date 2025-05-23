@@ -24,11 +24,11 @@
 }
 
 .solution__item--img {
+  max-width: 432px;
+  max-height: 294px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 432px;
-  height: 294px;
 }
 
 .solution__item--img img {
