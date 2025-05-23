@@ -1,6 +1,6 @@
 .feature {
   background: url(../images/feature/bg/bg-feature.png),
-    url("../images/feature/bg/radius.png");
+    url(../images/feature/bg/radius.png);
   background-size: 75% 65%, 100% 100%; /* Розмір фону */
   background-repeat: no-repeat, no-repeat; /* Повторення для верхнього та нижнього */
   background-position: center, center;
