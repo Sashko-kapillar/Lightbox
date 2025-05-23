@@ -1,6 +1,6 @@
 /* @font-face {
   font-family: "Poppins";
-  src: local("Poppins Medium"), local("Poppins-Medium"),
+  src:
     url("Poppins-Medium.woff2") format("woff2"),
     url("Poppins-Medium.woff") format("woff"),
     url("Poppins-Medium.ttf") format("truetype");
@@ -11,9 +11,8 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Regular"), local("Inter-Regular"),
-    url("Inter-Regular.woff2") format("woff2"),
-    url("Inter-Regular.woff") format("woff"),
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/inter/Inter-Regular.woff") format("woff"),
     url("../fonts/inter/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -22,9 +21,8 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Medium"), local("Inter-Medium"),
-    url("Inter-Medium.woff2") format("woff2"),
-    url("Inter-Medium.woff") format("woff"),
+  src: url("../fonts/inter/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/inter/Inter-Medium.woff") format("woff"),
     url("../fonts/inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -33,9 +31,8 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter SemiBold"), local("Inter-SemiBold"),
-    url("Inter-SemiBold.woff2") format("woff2"),
-    url("Inter-SemiBold.woff") format("woff"),
+  src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/inter/Inter-SemiBold.woff") format("woff"),
     url("../fonts/inter/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
@@ -44,9 +41,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto Regular"), local("Roboto-Regular"),
-    url("Roboto-Regular.woff2") format("woff2"),
-    url("Roboto-Regular.woff") format("woff"),
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Regular.woff") format("woff"),
     url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -55,9 +51,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto Medium"), local("Roboto-Medium"),
-    url("Roboto-Medium.woff2") format("woff2"),
-    url("Roboto-Medium.woff") format("woff"),
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Medium.woff") format("woff"),
     url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -66,20 +61,18 @@
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto SemiBold"), local("Roboto-SemiBold"),
-    url("Roboto-SemiBold.woff2") format("woff2"),
-    url("Roboto-SemiBold.woff") format("woff"),
-    url("../fonts/Roboto/Roboto-SemiBold.ttf") format("truetype");
-  font-weight: 600;
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Circular Std";
-  src: local("CircularStd Book"), local("CircularStd-Book"),
-    url("CircularStd-Book.woff2") format("woff2"),
-    url("CircularStd-Book.woff") format("woff"),
+  src: url("../fonts/Circular/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Book.woff") format("woff"),
     url("../fonts/Circular/CircularStd-Book.eot") format("truetype");
   font-weight: 300;
   font-style: normal;
@@ -88,9 +81,8 @@
 
 @font-face {
   font-family: "Circular Std";
-  src: local("CircularStd Regular"), local("CircularStd-Regular"),
-    url("CircularStd-Regular.woff2") format("woff2"),
-    url("CircularStd-Regular.woff") format("woff"),
+  src: url("../fonts/Circular/CircularStd-Regular.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Regular.woff") format("woff"),
     url("../fonts/CircularStd-Regular.eot") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -99,9 +91,8 @@
 
 @font-face {
   font-family: "Circular Std";
-  src: local("CircularStd Medium"), local("CircularStd-Medium"),
-    url("CircularStd-Medium.woff2") format("woff2"),
-    url("CircularStd-Medium.woff") format("woff"),
+  src: url("../fonts/Circular/CircularStd-Medium.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Medium.woff") format("woff"),
     url("../fonts/Circular/CircularStd-Medium.eot") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -110,9 +101,8 @@
 
 @font-face {
   font-family: "Circular Std";
-  src: local("CircularStd Bold"), local("CircularStd-Bold"),
-    url("CircularStd-Bold.woff2") format("woff2"),
-    url("CircularStd-Bold.woff") format("woff"),
+  src: url("../fonts/Circular/CircularStd-Bold.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Bold.woff") format("woff"),
     url("../fonts/Circular/CircularStd-Bold.eot") format("truetype");
   font-weight: 600;
   font-style: normal;
