@@ -1,7 +1,8 @@
 .advantages {
   display: flex;
   background-color: var(--color-8);
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .advantages__container {
