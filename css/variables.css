@@ -25,9 +25,10 @@
   --shadow-2: 0 18px 53px 0 rgba(215, 228, 249, 0.5);
   /*  image  */
   --shadow-3: -25px 20px 44px 0 rgba(84, 48, 209, 0.4);
-  /* --shadow-5: -25px 20px 44px 0 rgba(84, 48, 209, 0.4); */
   /*  button  */
   --shadow-4: 0 9px 20px -3px rgba(120, 84, 247, 0.33);
   /*  advantages card  */
   --shadow-5: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+  /*  reviews section  */
+  --shadow-6: 0 -16px 23px 0 rgba(255, 255, 255, 0.6);
 }
