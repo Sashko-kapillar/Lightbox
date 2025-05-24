@@ -30,5 +30,6 @@
   /*  advantages card  */
   --shadow-5: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
   /*  reviews section  */
-  --shadow-6: 0 -16px 23px 0 rgba(255, 255, 255, 0.6);
+  --shadow-6: inset 0 -16px 23px 0 rgba(255, 255, 255, 0.6);
+  --shadow-7: 0 18px 53px 0 rgba(215, 228, 249, 0.5);
 }
