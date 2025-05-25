@@ -1,14 +1,11 @@
 .feature {
-  background: url(../images/feature/bg/bg-feature.png),
-    url(../images/feature/bg/radius.png);
-  background-size: 80% 65%, 100% 100%; /* Розмір фону */
-  background-repeat: no-repeat, no-repeat; /* Повторення для верхнього та нижнього */
-  background-position: center, center;
+  background: url(../images/feature/bg/radius.png);
+  background-size: 100%; /* Розмір фону */
+  background-repeat: no-repeat; /* Повторення для верхнього та нижнього */
+  background-position: center;
   max-height: 1152px;
   max-width: 100%;
   display: flex;
-  position: relative;
-  /* z-index: 1; */
 }
 
 .feature::after {
@@ -16,7 +13,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 68px;
   background-color: var(--color-8);
   z-index: -1;
 }
@@ -36,9 +33,17 @@
   margin-top: 40px;
 }
 
-.feature__content > img {
+.feature__content > img:first-child {
+  position: absolute;
   border-radius: 20px;
   box-shadow: var(--shadow-3);
+}
+
+.feature__content > img:nth-child(2) {
+  position: absolute;
+  top: 168px;
+  left: 168px;
+  z-index: 5;
 }
 
 .feature__content--reverse {
@@ -49,20 +54,26 @@
 }
 
 .feature__content--reverse h3 {
-  max-width: 480px;
   padding-top: 32px;
 }
 
-.feature__text {
+.feature__text,
+.feature__text--reverse {
   max-width: 602px;
 }
 
-.feature__text h3 {
+.feature__text {
+  padding-top: 100px;
+}
+
+.feature__text h3,
+.feature__text--reverse h3 {
   color: var(--color);
   margin-bottom: 24px;
 }
 
-.feature__text p {
+.feature__text p,
+.feature__text--reverse p {
   max-width: 480px;
   margin-bottom: 40px;
   color: var(--color);
