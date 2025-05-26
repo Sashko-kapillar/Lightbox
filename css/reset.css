@@ -20,7 +20,6 @@ dl,
 dd {
   margin: 0;
   padding: 0;
-  scrollbar-gutter: stable;
 }
 
 ul[role="list"],
@@ -39,7 +38,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  scrollbar-gutter: stable;
 }
 
 a {
