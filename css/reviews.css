@@ -159,19 +159,6 @@
   fill: var(--color-4);
 }
 
-/* .reviews__card::after {
-  position: absolute;
-  content: "";
-  border-radius: 20px;
-  top: 56px;
-  left: 26px;
-  width: 678px;
-  height: 363px;
-  box-shadow: var(--shadow-7);
-  background-color: var(--color);
-  z-index: -1;
-} */
-
 .reviews__card p {
   font-family: var(--font4), sans-serif;
   font-weight: 400;
