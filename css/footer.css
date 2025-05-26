@@ -144,7 +144,7 @@
   color: var(--color);
 }
 
-.footer__end--btn div {
+.footer__end--btn span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +155,7 @@
   background-color: var(--color-6);
 }
 
-.footer__end--btn div svg {
+.footer__end--btn span svg {
   fill: var(--color);
 }
 
