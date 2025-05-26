@@ -52,7 +52,7 @@
   font-size: 18px;
 }
 
-.userAction__address {
+.phone {
   padding: 8px;
   display: flex;
   align-items: center;
@@ -61,11 +61,22 @@
   border-radius: 24px;
   min-width: 162px;
   font-style: normal;
+  transition: all 0.3s ease-in-out;
+}
+
+.phone:hover {
+  color: var(--color);
+  border: none;
+  background-color: var(--color-4);
 }
 
 .userAction__logIn {
-  padding-block: 0;
-  padding-inline: 0;
+  flex: 0 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.userAction__logIn:hover {
+  color: var(--color-4);
 }
 
 .userAction__start {
@@ -77,4 +88,10 @@
   border-radius: 24px;
   min-width: 172px;
   padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.userAction__start:hover {
+  color: var(--color);
+  background-color: var(--color-4);
 }

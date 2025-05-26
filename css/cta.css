@@ -23,6 +23,11 @@
   color: var(--color);
 }
 
+.cta__btn:hover {
+  background-color: var(--color);
+  color: var(--color-6);
+}
+
 .cta h3 {
   color: var(--color);
   max-width: 852px;

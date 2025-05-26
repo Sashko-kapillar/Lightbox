@@ -46,6 +46,12 @@
   box-shadow: var(--shadow-2);
 }
 
+.hero__btn:hover {
+  background-color: var(--color-6);
+  color: var(--color);
+  text-decoration: none;
+}
+
 .hero__move {
   display: flex;
   gap: 12px;

@@ -123,3 +123,7 @@
   margin-bottom: 40px;
   color: var(--color);
 }
+.feature__btn:hover {
+  background-color: var(--color);
+  color: var(--color-4);
+}

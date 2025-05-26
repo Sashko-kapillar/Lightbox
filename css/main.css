@@ -86,5 +86,5 @@ p {
   border-radius: 36px;
   background: var(--color-4);
   box-shadow: var(--shadow-4);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
