@@ -124,6 +124,17 @@
   z-index: 10;
   isolation: isolate;
 }
+/* 
+.reviews__card--untitled {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 50%;
+  translate: -50% -20%;
+  width: 234px;
+  height: 192px;
+  z-index: 10;
+} */
 
 .reviews__card--back {
   position: absolute;
@@ -160,11 +171,25 @@
 }
 
 .reviews__card p {
+  position: relative;
+  z-index: 15;
   font-family: var(--font4), sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 148%;
   text-align: center;
-  color: var(--color-2);
+  color: var(--color-12);
   min-width: 566px;
+}
+
+.reviews__card p::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -68px;
+  translate: -50% 0;
+  background: url("../images/reviews/untitled.png") no-repeat;
+  width: 234px;
+  height: 192px;
+  z-index: -1;
 }
