@@ -104,6 +104,10 @@
   max-width: 868px;
 }
 
+.footer__end--social a s {
+  fill: var(--black);
+}
+
 .footer__end--social a:hover svg {
   fill: var(--color-6);
 }
