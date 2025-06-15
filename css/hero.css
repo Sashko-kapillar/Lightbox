@@ -1,130 +1,120 @@
-.hero {
-  display: flex;
-  background: url(../images/hero/hero_bg-W.png),
-    url(../images/hero/hero-bg_gradient.png);
-  background-size: 50% 100%, 100% 100%; /* Розмір фону */
-  background-repeat: no-repeat, no-repeat; /* Повторення для верхнього та нижнього */
-  background-position: right, center;
-  padding-top: 0;
-  margin-top: -68px;
-  overflow: hidden;
-}
-
-.hero__container {
-  display: flex;
-  margin-top: 68px;
-}
-
 .hero__content {
   flex: 0 0 100%;
   display: flex;
-  flex-direction: column;
-  min-width: 818px;
-  margin-top: 246px;
-  min-height: 680px;
+  align-items: center;
 }
 
-.hero__title {
-  font-family: var(--font4), sans-serif;
+.hero__container {
+  max-width: 1520px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+.hero__body {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
   font-size: 85px;
-  line-height: 112%;
-  font-weight: 700;
-  max-width: 818px;
+  line-height: 127%;
   margin-bottom: 28px;
 }
 
 .hero__description {
-  display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 139%;
-  max-width: 716px;
   margin-bottom: 32px;
 }
 
-.hero__btn {
-  box-shadow: var(--shadow-2);
-}
-
-.hero__btn:hover {
-  background-color: var(--color-6);
-  color: var(--color);
-  text-decoration: none;
-}
-
-.hero__move {
+.hero__description ~ div {
   display: flex;
+  align-items: center;
   gap: 12px;
-  align-items: center;
-  color: var(--color-2);
-  font-weight: 500;
   font-size: 18px;
 }
 
-.hero__move--demo {
+.hero__description ~ div a {
   color: var(--color-6);
+  font-weight: 700;
 }
 
-.hero__image {
-  position: relative;
-  flex: 0 0 70%;
-  transform: translate(-60%, 10%);
-  z-index: 3;
+.lightbox-button {
+  background-color: var(--color-4);
+  border-color: var(--color-4);
 }
 
-.video-play {
-  content: "";
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 31%;
-  left: 41%;
-  transform: translate(-80%, -50%);
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: rgba(90, 84, 242, 0.1);
+.hero__image img {
+  max-width: 100%;
+  margin-top: 84px;
 }
 
-.video-play::before {
-  content: "";
-  position: absolute;
-  width: 168px;
-  height: 168px;
-  background-color: rgba(90, 84, 242, 1);
-  border-radius: 50%;
-  z-index: 2;
-}
+@media screen and (min-width: 767px) {
+  .hero {
+    display: flex;
+    overflow: hidden;
+  }
 
-.video-play__btn {
-  display: flex;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  fill: #fff;
-  z-index: 3;
-  padding-left: 12px;
-  cursor: pointer;
-  transition: all 0.9s ease;
-}
+  .hero__image {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translateX(-100%);
+  }
 
-.video-play__btn:hover {
-  transform: scale(1.2);
-  fill: gray;
-}
+  .video-play {
+    content: "";
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 41%;
+    left: 41%;
+    transform: translate(-80%, -50%);
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(90, 84, 242, 0.1);
+  }
 
-.video-play__text {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  text-align: center;
-  z-index: 3;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  max-width: 82px;
+  .video-play::before {
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    background-color: rgba(90, 84, 242, 1);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .video-play__btn {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    fill: #fff;
+    z-index: 3;
+    padding-left: 12px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+  }
+
+  .video-play__btn:hover {
+    transform: scale(1.2);
+    fill: gray;
+  }
+
+  .video-play__text {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 82px;
+  }
 }

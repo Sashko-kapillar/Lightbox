@@ -32,6 +32,7 @@
   justify-content: center;
   gap: 120px;
   padding: 40px 0;
+  margin-bottom: 40px;
 }
 
 .footer__list--header p {
@@ -57,8 +58,7 @@
 .footer__content {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 88px;
+  padding-bottom: 88px;
 }
 
 .footer__list {
@@ -74,38 +74,44 @@
 }
 
 .footer__list--lightbox {
-  padding-right: 156px;
+  margin-right: 156px;
 }
 
 .footer__list--solutions {
-  padding-right: 68px;
+  margin-right: 68px;
 }
 
 .footer__list--services {
-  padding-right: 136px;
+  margin-right: 136px;
 }
 
 .footer__list--features {
-  padding-right: 136px;
+  margin-right: 136px;
 }
 
 .footer__end {
-  position: relative;
   display: flex;
+  justify-content: space-between;
   background-color: var(--color);
-  padding: 28px 0 44px 220px;
+  padding: 28px 0 28px 220px;
 }
 
 .footer__end--social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 24px;
   width: 100%;
+  min-width: 648px;
   max-width: 868px;
 }
 
 .footer__end--social a s {
   fill: var(--black);
+}
+
+.footer__end--social a:hover svg {
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__end--social a:hover svg {
@@ -126,21 +132,21 @@
 }
 
 .footer__end--btn {
-  position: absolute;
-  top: -32px;
-  right: 252px;
+  display: flex;
   align-items: center;
-  gap: 56px;
-  font-family: var(--font-family), sans-serif;
+  justify-content: space-between;
+  min-width: 336px;
+  max-height: 64px;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  background-color: var(--color);
-  box-shadow: none;
-  color: var(--black);
+  line-height: 182%;
+  width: fit-content;
+  margin-right: 252px;
+  padding: 6px 8px 6px 32px;
   border: 3px solid var(--color-6);
-  padding: 6px 9px 6px 32px;
-  min-width: 256px;
-  transition: 0.3s ease;
+  background-color: var(--color);
+  margin-top: -60px;
 }
 
 .footer__end--btn:hover {
@@ -156,6 +162,7 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
+  border: 1px solid var(--color);
   background-color: var(--color-6);
 }
 

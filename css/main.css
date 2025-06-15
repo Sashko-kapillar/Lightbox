@@ -1,12 +1,13 @@
 html {
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 body {
   font-family: var(--font3), sans-serif;
   color: var(--black);
   background-color: var(--color);
+  width: 100%;
 
   /* Відступи безпеки */
   /* padding-top: env(safe-area-inset-top);
@@ -15,7 +16,23 @@ body {
   padding-left: env(safe-area-inset-left); */
 
   /* Резервується місце для вертикальної смуги прокрутки */
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*  min-height: 100vh;*/
+  width: 1960px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1560px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 button {
@@ -37,7 +54,7 @@ h1,
 h2 {
   font-family: var(--font4), sans-serif;
   font-weight: 700;
-  color: var(--color-7);
+  color: inherit;
 }
 
 h2 {
@@ -48,7 +65,7 @@ h2 {
 h3 {
   font-family: var(--font4), sans-serif;
   font-weight: 700;
-  color: var(--color-7);
+  color: var(--black);
   font-size: 36px;
   line-height: 100%;
 }
@@ -64,26 +81,4 @@ p {
 .section {
   padding-top: 40px;
   padding-bottom: 80px;
-}
-
-.container {
-  width: 1520px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.btn {
-  display: flex;
-  width: fit-content;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  color: var(--color);
-  padding: 21px 44px;
-  max-width: 100%;
-  border-radius: 36px;
-  background: var(--color-4);
-  box-shadow: var(--shadow-4);
-  transition: all 0.3s ease-in-out;
 }

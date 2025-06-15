@@ -1,98 +1,68 @@
 .header {
-  height: 48px;
   display: flex;
-  margin-top: 20px;
+  height: 56px;
+  width: 100%;
+  background-color: var(--color-1);
+  margin-top: 32px;
 }
 
-.header__container {
+.header__wrapper {
   display: flex;
-  height: 100%;
+  justify-content: space-between;
   align-items: center;
+  height: 56px;
+  gap: 20px;
+  border: 1px solid var(--color);
 }
 
-.logo__link {
+.logo {
   display: flex;
+  gap: 12px;
   align-items: center;
-  max-width: 162px;
-  height: auto;
-  margin-right: auto;
-  cursor: pointer;
-  flex-shrink: 0;
+  margin-right: 124px;
 }
 
+.logo .logo__text {
+  align-items: end;
+}
+
+.logo__mark {
+  fill: var(--color-6);
+}
+
+.logo__text {
+  fill: var(--color-6_1);
+}
 .nav {
-  display: flex;
-  height: 100%;
-  margin-right: auto;
+  font-family: var(--font3);
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 15%;
 }
 
 .nav__list {
   display: flex;
   gap: 32px;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.login-button {
+  font-family: var(--font3);
   font-weight: 500;
   font-size: 18px;
-  height: 100%;
-  width: 100%;
-}
-
-.nav__item {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.userAction {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  min-width: 444px;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.phone {
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--color-7);
-  border-radius: 24px;
-  min-width: 162px;
-  font-style: normal;
+  line-height: 1.5;
   transition: all 0.3s ease-in-out;
 }
 
-.phone:hover {
-  color: var(--color);
-  border: none;
-  background-color: var(--color-4);
+.login-button:hover {
+  color: var(--color-6_1);
+  transform: scale(1.2);
 }
 
-.userAction__logIn {
-  flex: 0 0 auto;
-  transition: all 0.3s ease-in-out;
-}
-
-.userAction__logIn:hover {
-  color: var(--color-4);
-}
-
-.userAction__start {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color);
-  background-color: var(--color-6);
-  border-radius: 24px;
+.contact__start-btn {
   min-width: 172px;
-  padding: 8px;
-  border: 2px solid var(--color-6);
-  transition: all 0.3s ease-in-out;
-}
-
-.userAction__start:hover {
-  color: var(--color);
-  background-color: var(--color-4);
+  width: fit-content;
 }

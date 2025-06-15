@@ -1,0 +1,30 @@
+.btn,
+.btn__bg {
+  padding: 12px 20px;
+  font-family: var(--font3), sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: transparent;
+  color: var(--black);
+  border: 2px solid var(--black);
+  border-radius: 60px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__bg {
+  background-color: var(--color-6);
+  border: 2px solid var(--color-6);
+  color: var(--color);
+  box-shadow: var(--shadow-4);
+}
+
+.btn:hover,
+.btn__bg:hover {
+  background-color: var(--color-6_1);
+  color: var(--color);
+  border-color: var(--color-6_1);
+  box-shadow: var(--shadow-4);
+}

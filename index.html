@@ -1,99 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Основні мета-теги -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Short description of the page for search engines."
-    />
-    <meta name="keywords" content="keyword1, keyword2, keyword3" />
-    <meta name="author" content="Your Name" />
-
-    <!-- мета-тег для robots -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Назва сторінки -->
-    <title>Lightbox</title>
-
-    <!-- Favicon -->
-    <!-- <link rel="icon" type="image/png" href="./favicon.png" /> -->
-
-    <!-- Normalize (можна замінити на свій Reset) -->
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
-    <!-- Основний CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- Open Graph для соцмереж -->
-    <meta property="og:title" content="My Web App" />
-    <meta
-      property="og:description"
-      content="A modern web application starter template."
-    />
-    <meta property="og:image" content="https://example.com/img/preview.jpg" />
-    <meta property="og:url" content="https://example.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- Хедер -->
-    <header class="header" role="banner">
-      <div class="container header__container">
-        <a href="#" title="Lightbox" class="logo__link">
-          <img
-            src="./images/header/logo.png"
-            alt="Logo"
-            class="logo--img"
-            width="167"
-            height="48"
-          />
-        </a>
-        <nav role="navigation" class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#solutions">Solutions</a></li>
-            <li class="nav__item"><a href="#features">Features</a></li>
-            <li class="nav__item"><a href="#aboutus">About Us</a></li>
-            <li class="nav__item"><a href="#blog">Blog</a></li>
-            <li class="nav__item"><a href="#contactus">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="userAction">
-          <address class="userAction__address">
-            <button class="phone">Call/Email Now</button>
-          </address>
-          <button type="button" class="userAction__logIn">Log in</button>
-          <button type="button" class="userAction__start">Get Started</button>
+    <div id="wrapper" class="wrapper">
+      <header class="header">
+        <div class="header__wrapper container">
+          <a
+            href="index.html"
+            class="logo"
+            title="Home"
+            aria-label="Home"
+            aria-hidden="true"
+          >
+            <svg
+              width="38"
+              height="44"
+              viewBox="0 0 36 36"
+              aria-hidden="true"
+              role="img"
+              class="logo__mark"
+            >
+              <use href="./images/icons.svg#icon-Logomark"></use>
+            </svg>
+            <svg
+              width="117"
+              height="38"
+              viewBox="0 0 117 36"
+              aria-hidden="true"
+              role="img"
+              class="logo__text"
+            >
+              <use href="./images/icons.svg#icon-Logotype"></use>
+            </svg>
+          </a>
+          <nav class="nav" aria-label="Main Navigation" role="navigation">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#Solutions">Solutions</a></li>
+              <li class="nav__item"><a href="#Features">Features</a></li>
+              <li class="nav__item"><a href="#About Us">About Us</a></li>
+              <li class="nav__item"><a href="#Blog">Blog</a></li>
+              <li class="nav__item"><a href="#Contact Us">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div
+            class="address"
+            aria-label="Contact Information"
+            role="contentinfo"
+          >
+            <button
+              class="contact-button btn"
+              type="button"
+              aria-label="Call or Email Now"
+              role="button"
+            >
+              <span>Call/Email Now</span>
+            </button>
+            <button
+              class="login-button"
+              type="button"
+              aria-label="Log In"
+              role="button"
+            >
+              Log In
+            </button>
+            <button
+              class="contact__start-btn btn__bg"
+              type="button"
+              aria-label="Get Started"
+              role="button"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
-
-    <!-- Основний контент -->
-    <main class="main" role="main">
-      <section class="section hero" role="banner">
-        <div class="container hero__container">
+      </header>
+      <main class="main" role="main">
+        <section class="hero" aria-label="Hero Section" role="banner">
           <div class="hero__content">
-            <h1 class="hero__title">
-              Audits, Reviews, and Compilations for CA’s
-            </h1>
-            <p class="hero__description">
-              AuditFile is a secure, cloud-based solution that helps CPA firms
-              and internal audit teams perform efficient audits, reviews, and
-              compilations.
-            </p>
-            <div class="hero__move">
-              <a href="#features" class="hero__btn btn">Get Started Today</a>
-              or <a href="#" class="hero__move--demo">Request for Demo ›</a>
+            <div class="container">
+              <div class="hero__body">
+                <h1 class="hero__title">
+                  Audits, Reviews, and Compilations for CA’s
+                </h1>
+                <p class="hero__description">
+                  AuditFile is a secure, cloud-based solution that helps CPA
+                  firms and internal audit teams perform efficient audits,
+                  reviews, and compilations.
+                </p>
+                <div>
+                  <button
+                    class="lightbox-button btn__bg"
+                    aria-label="Open Lightbox"
+                  >
+                    Get Started Today
+                  </button>
+                  or
+                  <a href="#" class="hero__request-link">Request for Demo ›</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="hero__image">
-            <img src="./images/hero/right-img-1x.png" alt="Hero Image" />
+            <img
+              src="./images/hero/right-img-1x.png"
+              alt="Hero Image"
+              aria-hidden="true"
+            />
             <div class="video-play">
               <button class="video-play__btn" type="button">
                 <svg width="36" height="36" viewBox="0 0 36 36">
@@ -103,31 +124,31 @@
               <span class="video-play__text">Watch the Video</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- solutions  -->
-      <section id="solutions" class="section solution">
-        <div class="container solution__container">
-          <h2 class="solution__title">
-            Elevate Your Audit, Risk, and Compliance Game
-          </h2>
-          <div class="solution__content">
+        </section>
+        <section id="solutions" class="solution">
+          <div class="solution__wrapper container">
+            <h2 class="solution__title">
+              Elevate Your Audit, Risk, and Compliance Game
+            </h2>
             <ul class="solution__list">
               <li class="solution__item">
-                <img
-                  src="./images/solution/solution-left-1x.jpg"
-                  alt="Solutions photo"
-                  width="431"
-                  height="293"
-                  class="solution__img"
-                />
-                <h3>Free up teams to focus on the risks that matter.</h3>
-                <p>
+                <picture>
+                  <img
+                    src="./images/solution/solution-left-1x.jpg"
+                    alt="Solution Image"
+                  />
+                </picture>
+                <h3>
+                  Break down silos and embed risk awareness into the front
+                  lines.
+                </h3>
+                <p class="solution__description">
                   Elevate risk management programs by integrating strategic,
                   operational and IT risks.
                 </p>
-                <a href="#">Get Started Today <span>›</span></a>
+                <button type="button" class="solution__btn">
+                  Get Started Today ›
+                </button>
               </li>
               <li class="solution__item">
                 <ul class="solution__list--small">
@@ -159,22 +180,23 @@
                     />
                   </li>
                 </ul>
-                <img
-                  src="./images/solution/solution-center-1x.jpg"
-                  alt="Solution photo"
-                  width="431"
-                  height="294"
-                  class="solution__img"
-                />
+                <picture>
+                  <img
+                    src="./images/solution/solution-center-1x.jpg"
+                    alt="Solution Image"
+                  />
+                </picture>
                 <h3>
                   Break down silos and embed risk awareness into the front
                   lines.
                 </h3>
-                <p>
+                <p class="solution__description">
                   Elevate risk management programs by integrating strategic,
                   operational and IT risks.
                 </p>
-                <a href="#">Get Started Today <span>›</span></a>
+                <button type="button" class="solution__btn">
+                  Get Started Today ›
+                </button>
               </li>
               <li class="solution__item">
                 <ul class="solution__img-small--right">
@@ -188,416 +210,413 @@
                     <img src="./images/solution/small/lg-1x.png" alt="social" />
                   </li>
                 </ul>
-                <img
-                  src="./images/solution/solution-right-1x.jpg"
-                  alt="Solution photo"
-                  width="431"
-                  height="294"
-                  class="solution__img"
-                />
+                <picture>
+                  <img
+                    src="./images/solution/solution-right-1x.jpg"
+                    alt="Solution Image"
+                  />
+                </picture>
                 <h3>See the big picture and optimize risk/value decisions.</h3>
-                <p>
+                <p class="solution__description">
                   Elevate risk management programs by integrating strategic,
                   operational and IT risks.
                 </p>
-                <a href="#">Get Started Today <span>›</span></a>
+                <button type="button" class="solution__btn">
+                  Get Started Today ›
+                </button>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <!-- Features  -->
-      <section id="features" class="section feature">
-        <div class="container feature__container">
+        </section>
+        <!-- Features  -->
+        <section id="features" class="feature">
           <h2 class="visually-hidden">Feature</h2>
-          <div class="feature__content">
-            <ul class="content__list" role="list">
-              <li>
-                <img
-                  src="./images/feature/feat-left-1x.jpg"
-                  alt="Feature image"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/feature/bg/bg-left.png"
-                  alt="Feature image"
-                />
-              </li>
-            </ul>
-            <div class="feature__text">
-              <h3>
-                The Industry's Top-Rated GRC and Audit Management Technology
-              </h3>
-              <p>
-                Built to provide the efficiency, connectedness, and visibility
-                you need to stay ahead of today’s dynamic risk environment.
-                Built to provide the efficiency, connectedness, and visibility
-                you need to stay ahead of today’s dynamic risk environment.
-              </p>
-              <button type="button" class="btn feature__btn">
-                Read the Documentation
-              </button>
+          <div class="container feature__container">
+            <div class="feature__content">
+              <ul class="content__list" role="list">
+                <li>
+                  <img
+                    src="./images/feature/feat-left-1x.jpg"
+                    alt="Feature image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/feature/bg/bg-left.png"
+                    alt="Feature image"
+                  />
+                </li>
+              </ul>
+              <div class="feature__text">
+                <h3>
+                  The Industry's Top-Rated GRC and Audit Management Technology
+                </h3>
+                <p>
+                  Built to provide the efficiency, connectedness, and visibility
+                  you need to stay ahead of today’s dynamic risk environment.
+                  Built to provide the efficiency, connectedness, and visibility
+                  you need to stay ahead of today’s dynamic risk environment.
+                </p>
+                <button type="button" class="btn__bg feature__btn">
+                  Read the Documentation
+                </button>
+              </div>
+            </div>
+            <div class="feature__content__reverse">
+              <ul class="content__reverse__list" role="list">
+                <li>
+                  <img
+                    src="./images/feature/feat-right-1x.jpg"
+                    alt="Feature image"
+                    class="content__reverse__list--img"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/feature/bg/bg-right.png"
+                    alt="Feature image"
+                  />
+                </li>
+              </ul>
+              <div class="feature__text--reverse">
+                <h3>Explore the Modern Connected Risk Platform</h3>
+                <p>
+                  Built to provide the efficiency, connectedness, and visibility
+                  you need to stay ahead of today’s dynamic risk environment.
+                  Built to provide the efficiency, connectedness, and visibility
+                  you need to stay ahead of today’s dynamic risk environment.
+                </p>
+                <button type="button" class="btn__bg feature__btn">
+                  Read the Documentation
+                </button>
+              </div>
             </div>
           </div>
-          <div class="feature__content__reverse">
-            <ul class="content__reverse__list" role="list">
-              <li>
+        </section>
+        <!--  Advantages  -->
+        <section id="advantages" class="section advantages">
+          <div class="container advantages__container">
+            <h2 class="advantages__title">Our Advantages</h2>
+            <h3>Explore the Modern Connected Risk Platform</h3>
+            <p class="advantages__description">
+              Built to provide the efficiency, connectedness, and visibility you
+              need to stay ahead of today’s dynamic risk environment.
+            </p>
+            <ul role="list" class="advantages__list">
+              <li class="advantages__item">
                 <img
-                  src="./images/feature/feat-right-1x.jpg"
-                  alt="Feature image"
-                  class="content__reverse__list--img"
+                  src="./images/advantages/risk.png"
+                  alt=""
+                  width="72"
+                  height="72"
                 />
+                <h4>Risk Management</h4>
+                <p class="advantages__item--description">
+                  The gradual accumulation of information about
+                </p>
               </li>
-              <li>
+              <li class="advantages__item">
                 <img
-                  src="./images/feature/bg/bg-right.png"
-                  alt="Feature image"
+                  src="./images/advantages/compliance.png"
+                  alt=""
+                  width="72"
+                  height="72"
                 />
+                <h4>Compliance Management</h4>
+                <p class="advantages__item--description">
+                  The gradual accumulation of information about
+                </p>
               </li>
-            </ul>
-            <div class="feature__text--reverse">
-              <h3>Explore the Modern Connected Risk Platform</h3>
-              <p>
-                Built to provide the efficiency, connectedness, and visibility
-                you need to stay ahead of today’s dynamic risk environment.
-                Built to provide the efficiency, connectedness, and visibility
-                you need to stay ahead of today’s dynamic risk environment.
-              </p>
-              <button type="button" class="btn feature__btn">
-                Read the Documentation
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="array-end"></div> -->
-      </section>
-
-      <!--  Advantages  -->
-      <section id="advantages" class="section advantages">
-        <div class="container advantages__container">
-          <h2 class="advantages__title">Our Advantages</h2>
-          <h3>Explore the Modern Connected Risk Platform</h3>
-          <p class="advantages__description">
-            Built to provide the efficiency, connectedness, and visibility you
-            need to stay ahead of today’s dynamic risk environment.
-          </p>
-          <ul role="list" class="advantages__list">
-            <li class="advantages__item">
-              <img
-                src="./images/advantages/risk.png"
-                alt=""
-                width="72"
-                height="72"
-              />
-              <h4>Risk Management</h4>
-              <p class="advantages__item--description">
-                The gradual accumulation of information about
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img
-                src="./images/advantages/compliance.png"
-                alt=""
-                width="72"
-                height="72"
-              />
-              <h4>Compliance Management</h4>
-              <p class="advantages__item--description">
-                The gradual accumulation of information about
-              </p>
-            </li>
-            <li class="advantages__item">
-              <svg
-                width="72"
-                height="72"
-                viewBox="0 0 36 36"
-                fill="var(--color)"
-              >
-                <use href="./images/icons.svg#icon-sox"></use>
-              </svg>
-              <h4>SOX Management</h4>
-              <p class="advantages__item--description">
-                The gradual information about atomic behaviour...
-              </p>
-            </li>
-            <li class="advantages__item">
-              <svg width="72" height="72" viewBox="0 0 36 36">
-                <use href="./images/icons.svg#icon-audit"></use>
-              </svg>
-              <h4>Internal Audit Streamlined</h4>
-              <p class="advantages__item--description">
-                The gradual accumulation of information about
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Reviews -->
-      <section id="reviews" class="section reviews">
-        <div class="container reviews__container">
-          <h2>
-            Trusted by 120+ <br />
-            Forward-thinking Audit, Risk, and Compliance Teams
-          </h2>
-          <ul class="reviews__context">
-            <li class="reviews__card">
-              <p>
-                “LightBox really saved us time and allowed us <br />
-                to be much more efficient with the time and <br />
-                resources we had.”
-              </p>
-            </li>
-            <li class="reviews__card--back"></li>
-            <li class="reviews__card--back2"></li>
-            <li class="reviews__card--arrow">
-              <svg width="32" viewBox="0 0 36 36" fill="var(--color-2)">
-                <use href="./images/icons.svg#icon-arrow-left"></use>
-              </svg>
-              <svg width="52" viewBox="0 0 36 36">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </li>
-          </ul>
-          <ul class="reviews__list" role="list">
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-left-top.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-left-center.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-left-bottom.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-right-top.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-right-center.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img
-                src="./images/reviews/img-right-bottom.png"
-                alt="Reviews photo"
-              />
-            </li>
-            <li class="reviews__img">
-              <img src="./images/bg/bg-green.png" alt="Reviews photo" />
-            </li>
-            <li class="reviews__img">
-              <img src="./images/bg/bg-red.png" alt="Reviews photo" />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="aboutus" class="section support">
-        <div class="container support__container">
-          <h2>Supported by real people</h2>
-          <p class="support__description">
-            We are leading cloud-based platform transforming how enterprises
-            manage risk. Its integrated suite of easy-to-use audit, risk, and
-            compliance solutions streamlines internal audit, SOX compliance,
-            controls management, risk management, and security compliance.
-          </p>
-          <div class="support__img">
-            <img
-              src="./images/support/support-people.png"
-              alt="Supported people"
-            />
-          </div>
-          <ul>
-            <li class="support__bg--left">
-              <img src="./images/bg/bg-green.png" alt="Support bg" />
-            </li>
-            <li class="support__bg--right">
-              <img src="./images/bg/bg-red.png" alt="Support bg" />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="cta" class="section cta">
-        <div class="container cta__container">
-          <h2 class="visually-hidden">Ready to Get Started?</h2>
-          <h3>
-            Drive efficiency and value
-            <span>
-              with the <br />industry's most user-friendly platform.
-            </span>
-          </h3>
-          <button type="button" class="btn cta__btn">Get Started</button>
-        </div>
-      </section>
-    </main>
-
-    <!-- Футер -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer__header">
-          <ul class="footer__list--header">
-            <li class="header__guarantee">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="var(--color)"
-              >
-                <use href="./images/icons.svg#icon-guarantee"></use>
-              </svg>
-              <p>30 day <span>money back guarantee</span></p>
-            </li>
-            <li class="header__support">
-              <svg width="40" height="40" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-support"></use>
-              </svg>
-              <p><span>Support</span> teams across the world</p>
-            </li>
-            <li class="header__safe">
-              <svg width="40" height="40" viewBox="0 0 40 40">
-                <use href="./images/icons.svg#icon-safe"></use>
-              </svg>
-              <p><span>Safe & Secure</span> online payment</p>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <ul class="footer__list footer__list--lightbox">
-            <li class="footer__list--title">Company</li>
-            <li><a href="#aboutus">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#contactus">Team</a></li>
-            <li><a href="#cta">Work With Us</a></li>
-          </ul>
-          <ul class="footer__list footer__list--solutions">
-            <li class="footer__list--title">Solutions</li>
-            <li><a href="#">Statutory audit</a></li>
-            <li><a href="#">Internal audit</a></li>
-            <li><a href="#">GST Audit</a></li>
-            <li><a href="#">Tax Audit</a></li>
-            <li><a href="#">Internal Finance Control (IFC)</a></li>
-            <li><a href="#">Relationship Audit</a></li>
-            <li><a href="#">Client Accounting Internal</a></li>
-            <li><a href="#">IND AS</a></li>
-            <li><a href="#">Special Audit</a></li>
-            <li><a href="#">Bank Audit</a></li>
-            <li><a href="#">Bank Concurrent Audit</a></li>
-            <li><a href="#">Due Diligence</a></li>
-            <li><a href="#">International taxation</a></li>
-          </ul>
-          <ul class="footer__list footer__list--services">
-            <li class="footer__list--title">...</li>
-            <li><a href="#">Special Assignment</a></li>
-            <li><a href="#">Income Tax</a></li>
-            <li><a href="#">Service Tax Refund</a></li>
-            <li><a href="#">Valuation</a></li>
-            <li><a href="#">Investment Banking</a></li>
-            <li><a href="#">IA Scope Specific</a></li>
-            <li><a href="#">IFC Review</a></li>
-            <li><a href="#">GST Impact</a></li>
-            <li><a href="#">Merger & Demerger</a></li>
-            <li><a href="#">TP Study</a></li>
-            <li><a href="#">Limited Review</a></li>
-            <li><a href="#">Internal Audit - Manufacturing</a></li>
-            <li><a href="#">Limited Review (IndAS)</a></li>
-          </ul>
-          <ul class="footer__list footer__list--features">
-            <li class="footer__list--title">Features</li>
-            <li><a href="#">Client Management</a></li>
-            <li><a href="#">Budgeting</a></li>
-            <li>
-              <a href="#">Staff Allocation/ Assignment Mapping / Onboarding</a>
-            </li>
-            <li><a href="#">Task Assignment</a></li>
-            <li><a href="#">Inbuild Audit Process</a></li>
-            <li><a href="#">Invoicing</a></li>
-            <li><a href="#">Client Data</a></li>
-            <li><a href="#">Asset Mgmt</a></li>
-            <li><a href="#">Time Sheet & Expense Sheet</a></li>
-            <li><a href="#">Peer Review</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Rolled over Assignment</a></li>
-            <li><a href="#">Knowledge Bank</a></li>
-            <li><a href="#">Add observations</a></li>
-            <li><a href="#">Assignment tracker</a></li>
-          </ul>
-          <ul class="footer__list footer__list--legal">
-            <li class="footer__list--title">Legal</li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__end">
-        <div class="footer__end--social">
-          <ul>
-            <li>
-              <a href="#">
+              <li class="advantages__item">
                 <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="var(--black)"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 36 36"
+                  fill="var(--color)"
                 >
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-sox"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/icons.svg#icon-fb"></use>
+                <h4>SOX Management</h4>
+                <p class="advantages__item--description">
+                  The gradual information about atomic behaviour...
+                </p>
+              </li>
+              <li class="advantages__item">
+                <svg width="72" height="72" viewBox="0 0 36 36">
+                  <use href="./images/icons.svg#icon-audit"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/icons.svg#icon-rss"></use>
+                <h4>Internal Audit Streamlined</h4>
+                <p class="advantages__item--description">
+                  The gradual accumulation of information about
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Reviews -->
+        <section id="reviews" class="section reviews">
+          <div class="container reviews__container">
+            <h2>
+              Trusted by 120+ <br />
+              Forward-thinking Audit, Risk, and Compliance Teams
+            </h2>
+            <ul class="reviews__context">
+              <li class="reviews__card">
+                <p>
+                  “LightBox really saved us time and allowed us <br />
+                  to be much more efficient with the time and <br />
+                  resources we had.”
+                </p>
+              </li>
+              <li class="reviews__card--back"></li>
+              <li class="reviews__card--back2"></li>
+              <li class="reviews__card--arrow">
+                <svg width="32" viewBox="0 0 36 36" fill="var(--color-2)">
+                  <use href="./images/icons.svg#icon-arrow-left"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/icons.svg#icon-insta"></use>
+                <svg width="52" viewBox="0 0 36 36">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
-          <p>Copyright © 2025 LightBox. All Rights Reserved</p>
-        </div>
-        <button type="button" class="btn footer__end--btn">
-          Subscribe to Newsletters
-          <span>
-            <svg width="24" viewBox="0 0 20 20">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </span>
-        </button>
-        <span>Enter your e-mail and subscribe to our newsletter.</span>
-      </div>
-    </footer>
-
-    <!-- Основний скрипт -->
-    <!-- <script type="module" src="./js/script.js"></script> -->
+              </li>
+            </ul>
+            <ul class="reviews__list" role="list">
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-left-top.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-left-center.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-left-bottom.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-right-top.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-right-center.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img
+                  src="./images/reviews/img-right-bottom.png"
+                  alt="Reviews photo"
+                />
+              </li>
+              <li class="reviews__img">
+                <img src="./images/bg/bg-green.png" alt="Reviews photo" />
+              </li>
+              <li class="reviews__img">
+                <img src="./images/bg/bg-red.png" alt="Reviews photo" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--   Aboutus and support   -->
+        <section id="aboutus" class="section support">
+          <div class="container support__container">
+            <h2>Supported by real people</h2>
+            <p class="support__description">
+              We are leading cloud-based platform transforming how enterprises
+              manage risk. Its integrated suite of easy-to-use audit, risk, and
+              compliance solutions streamlines internal audit, SOX compliance,
+              controls management, risk management, and security compliance.
+            </p>
+            <div class="support__img">
+              <img
+                src="./images/support/support-people.png"
+                alt="Supported people"
+              />
+            </div>
+            <ul>
+              <li class="support__bg--left">
+                <img src="./images/bg/bg-green.png" alt="Support bg" />
+              </li>
+              <li class="support__bg--right">
+                <img src="./images/bg/bg-red.png" alt="Support bg" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--   CTA   -->
+        <section id="cta" class="section cta">
+          <div class="container cta__container">
+            <h2 class="visually-hidden">Ready to Get Started?</h2>
+            <h3>
+              Drive efficiency and value
+              <span>
+                with the <br />industry's most user-friendly platform.
+              </span>
+            </h3>
+            <button type="button" class="btn cta__btn">Get Started</button>
+          </div>
+        </section>
+        <!--   Footer   -->
+        <footer class="footer" role="contentinfo">
+          <div class="container">
+            <div class="footer__header">
+              <ul class="footer__list--header">
+                <li class="header__guarantee">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="var(--color)"
+                  >
+                    <use href="./images/icons.svg#icon-guarantee"></use>
+                  </svg>
+                  <p>30 day <span>money back guarantee</span></p>
+                </li>
+                <li class="header__support">
+                  <svg width="40" height="40" viewBox="0 0 40 40">
+                    <use href="./images/icons.svg#icon-support"></use>
+                  </svg>
+                  <p><span>Support</span> teams across the world</p>
+                </li>
+                <li class="header__safe">
+                  <svg width="40" height="40" viewBox="0 0 40 40">
+                    <use href="./images/icons.svg#icon-safe"></use>
+                  </svg>
+                  <p><span>Safe & Secure</span> online payment</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__content">
+              <ul class="footer__list footer__list--lightbox">
+                <li class="footer__list--title">Company</li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contactus">Team</a></li>
+                <li><a href="#cta">Work With Us</a></li>
+              </ul>
+              <ul class="footer__list footer__list--solutions">
+                <li class="footer__list--title">Solutions</li>
+                <li><a href="#">Statutory audit</a></li>
+                <li><a href="#">Internal audit</a></li>
+                <li><a href="#">GST Audit</a></li>
+                <li><a href="#">Tax Audit</a></li>
+                <li><a href="#">Internal Finance Control (IFC)</a></li>
+                <li><a href="#">Relationship Audit</a></li>
+                <li><a href="#">Client Accounting Internal</a></li>
+                <li><a href="#">IND AS</a></li>
+                <li><a href="#">Special Audit</a></li>
+                <li><a href="#">Bank Audit</a></li>
+                <li><a href="#">Bank Concurrent Audit</a></li>
+                <li><a href="#">Due Diligence</a></li>
+                <li><a href="#">International taxation</a></li>
+              </ul>
+              <ul class="footer__list footer__list--services">
+                <li class="footer__list--title">...</li>
+                <li><a href="#">Special Assignment</a></li>
+                <li><a href="#">Income Tax</a></li>
+                <li><a href="#">Service Tax Refund</a></li>
+                <li><a href="#">Valuation</a></li>
+                <li><a href="#">Investment Banking</a></li>
+                <li><a href="#">IA Scope Specific</a></li>
+                <li><a href="#">IFC Review</a></li>
+                <li><a href="#">GST Impact</a></li>
+                <li><a href="#">Merger & Demerger</a></li>
+                <li><a href="#">TP Study</a></li>
+                <li><a href="#">Limited Review</a></li>
+                <li><a href="#">Internal Audit - Manufacturing</a></li>
+                <li><a href="#">Limited Review (IndAS)</a></li>
+              </ul>
+              <ul class="footer__list footer__list--features">
+                <li class="footer__list--title">Features</li>
+                <li><a href="#">Client Management</a></li>
+                <li><a href="#">Budgeting</a></li>
+                <li>
+                  <a href="#"
+                    >Staff Allocation/ Assignment Mapping / Onboarding</a
+                  >
+                </li>
+                <li><a href="#">Task Assignment</a></li>
+                <li><a href="#">Inbuild Audit Process</a></li>
+                <li><a href="#">Invoicing</a></li>
+                <li><a href="#">Client Data</a></li>
+                <li><a href="#">Asset Mgmt</a></li>
+                <li><a href="#">Time Sheet & Expense Sheet</a></li>
+                <li><a href="#">Peer Review</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Rolled over Assignment</a></li>
+                <li><a href="#">Knowledge Bank</a></li>
+                <li><a href="#">Add observations</a></li>
+                <li><a href="#">Assignment tracker</a></li>
+              </ul>
+              <ul class="footer__list footer__list--legal">
+                <li class="footer__list--title">Legal</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__end">
+            <div class="footer__end--social">
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="var(--black)"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-rss"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p>Copyright © 2025 LightBox. All Rights Reserved</p>
+            </div>
+            <button type="button" class="btn footer__end--btn">
+              Subscribe to Newsletters
+              <span>
+                <svg width="24" viewBox="0 0 20 20">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </span>
+            </button>
+            <span>Enter your e-mail and subscribe to our newsletter.</span>
+          </div>
+        </footer>
+        <!-- <script src="./js/script.js"></script> -->
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

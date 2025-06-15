@@ -1,4 +1,5 @@
-/* Стилі для приховання елементів */
+/* utils.css */
+/* Reset some default styles */
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -30,10 +30,10 @@
 
 .cta__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 68px;
-  padding: 78px 44px;
+  max-width: 1128px;
+  padding: 78px 0;
 }
 
 .cta__btn {

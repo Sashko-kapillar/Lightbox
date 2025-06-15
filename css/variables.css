@@ -8,12 +8,13 @@
   --font5: "Poppins", sans-serif;
 
   /* Кольори */
-  --color: #fff;
+  --color: #fafafa;
   --color-2: #d7dce1;
   --color-3: #7d25f0;
   --color-4: #f35b09;
   --color-5: #f7941d;
   --color-6: #5a54f2;
+  --color-6_1: #5d6491;
   --color-7: #272d4e;
   --color-8: #231f8b;
   --color-9: #737373;
@@ -21,7 +22,7 @@
   --color-10: #e1e1e1;
   --color-11: #ffba49;
   --color-12: #94a2b3;
-  --black: #231f20;
+  --black: #272d4e;
 
   /*  Тіні  */
   --shadow-1: 0px -8px 50% 0px #d7e4f9;

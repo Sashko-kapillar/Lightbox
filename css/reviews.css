@@ -151,8 +151,11 @@
   gap: 28px;
   margin-top: 80px;
   padding-right: 88px;
-  transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.reviews__card--arrow svg {
+  transition: all 0.4s ease-in-out;
 }
 
 .reviews__card--arrow svg:hover {

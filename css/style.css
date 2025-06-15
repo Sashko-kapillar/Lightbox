@@ -2,8 +2,9 @@
 @import url("./font.css");
 @import url("./main.css");
 @import url("./variables.css"); /* Для змінних */
+@import url("./utils/button.css"); /* Для стилів кнопок */
 /* @import url("./media.css"); Для медіа-запитів */
-@import url("./utils.css"); /* Для загальних стилів */
+@import url("../css/utils/utils.css"); /* Для загальних стилів */
 @import url("./header.css"); /* Для стилів header */
 @import url("./hero.css"); /* Для стилів hero */
 @import url("./solutions.css"); /* Для стилів solution */

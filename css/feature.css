@@ -3,8 +3,8 @@
   background-size: 100% 100%; /* Розмір фону */
   background-repeat: no-repeat; /* Повторення для верхнього та нижнього */
   background-position: center;
-  max-height: 1140px;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
   display: flex;
   position: relative;
 }
@@ -22,8 +22,8 @@
 .feature__container {
   display: flex;
   flex-direction: column;
-  gap: 70px;
-  margin-top: -100px;
+  justify-content: space-between;
+  gap: 56px;
 }
 
 .feature__content,
@@ -34,8 +34,16 @@
 }
 
 .feature__content {
-  margin-top: 40px;
+  align-items: start;
   padding-left: 15%;
+}
+
+.feature__text {
+  padding-top: 100px;
+}
+
+.content__list {
+  margin-top: -40px;
 }
 
 .content__list,
@@ -89,9 +97,13 @@
 
 .feature__content__reverse {
   flex-direction: row-reverse;
-  margin-left: 160px;
-  margin-top: 0;
   align-items: start;
+  align-items: flex-end;
+  padding-bottom: 100px;
+}
+
+.feature__content__reverse ul {
+  margin-bottom: -100px;
 }
 
 .feature__content__reverse h3 {
@@ -101,10 +113,6 @@
 .feature__text,
 .feature__text--reverse {
   max-width: 602px;
-}
-
-.feature__text {
-  padding-top: 100px;
 }
 
 .feature__text--reverse {
@@ -123,6 +131,13 @@
   margin-bottom: 40px;
   color: var(--color);
 }
+
+.feature__btn {
+  background-color: var(--color-4);
+  border: 2px solid var(--color-4);
+  padding: 20px 24px;
+}
+
 .feature__btn:hover {
   background-color: var(--color);
   color: var(--color-4);
