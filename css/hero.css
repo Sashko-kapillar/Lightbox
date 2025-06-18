@@ -1,8 +1,4 @@
-.hero__content {
-  flex: 0 0 100%;
-  display: flex;
-  align-items: center;
-}
+/*
 
 .hero__container {
   max-width: 1520px;
@@ -17,12 +13,6 @@
   flex-direction: column;
 }
 
-h1 {
-  font-size: 85px;
-  line-height: 127%;
-  margin-bottom: 28px;
-}
-
 .hero__description {
   margin-bottom: 32px;
 }
@@ -34,10 +24,6 @@ h1 {
   font-size: 18px;
 }
 
-.hero__description ~ div a {
-  color: var(--color-6);
-  font-weight: 700;
-}
 
 .lightbox-button {
   background-color: var(--color-4);
@@ -47,15 +33,57 @@ h1 {
 .hero__image img {
   max-width: 100%;
   margin-top: 84px;
+}*/
+
+.hero {
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 767px) {
+h1 {
+  font-size: 35px;
+  line-height: 127%;
+  margin-bottom: 28px;
+  max-width: 320px;
+}
+
+.hero__description {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 127%;
+  color: var(--color-12);
+  margin-bottom: 24px;
+}
+
+.hero__request__container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero__request__link {
+  color: var(--color-6);
+  font-weight: 700;
+}
+
+.hero__btn--start-today {
+  background-color: var(--color-4);
+  border: none;
+  margin-right: 12px;
+}
+
+.hero__image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   .hero {
     display: flex;
     overflow: hidden;
   }
 
   .hero__image {
+    display: flex;
     position: relative;
     flex: 0 0 50%;
     transform: translateX(-100%);
@@ -68,7 +96,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 41%;
+    top: 35%;
     left: 41%;
     transform: translate(-80%, -50%);
     z-index: 1;
@@ -116,5 +144,32 @@ h1 {
     font-size: 18px;
     font-weight: 500;
     max-width: 82px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .hero {
+    margin-bottom: 0;
+  }
+
+  .hero__content {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 85px;
+    max-width: 818px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: 139%;
+    max-width: 716px;
+  }
+
+  .hero__image {
+    margin-top: 84px;
   }
 }
