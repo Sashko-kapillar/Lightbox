@@ -1,7 +1,7 @@
 .feature {
   background: url(../images/feature/bg/radius.png);
   background-size: 100% 100%; /* Розмір фону */
-  background-repeat: no-repeat; /* Повторення для верхнього та нижнього */
+  background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   width: 100%;
@@ -29,107 +29,30 @@
 .feature__content,
 .feature__content__reverse {
   display: flex;
-  align-items: center;
-  gap: 76px;
+  flex-direction: column;
+  gap: 36px;
 }
 
-.feature__content {
-  align-items: start;
-  padding-left: 15%;
+.content__list li:nth-child(2),
+.content__list__reverse li:nth-child(2) {
+  display: none;
 }
 
-.feature__text {
-  padding-top: 100px;
-}
-
-.content__list {
-  margin-top: -40px;
-}
-
-.content__list,
-.content__reverse__list {
-  position: relative;
-  box-shadow: var(--shadow-3);
-  width: 430px;
-  height: 548px;
+.content__list:first-child,
+.content__list__reverse li:first-child {
   border-radius: 20px;
+  overflow: hidden;
 }
 
-.content__list li img,
-.content__reverse__list--img {
-  border-radius: 20px;
-}
-
-.content__list li:first-child,
-.content__reverse__list li:first-child {
-  position: relative;
-  z-index: 5;
-}
-
-.content__list li:nth-child(2) img,
-.content__reverse__list li:nth-child(2) img {
-  content: "";
-  position: absolute;
-  z-index: 1;
-}
-
-.content__list li:nth-child(2) img {
-  top: 168px;
-  left: -128px;
-}
-
-.content__reverse__list li:nth-child(2) img {
-  top: -26px;
-  left: 160px;
-}
-
-.content__reverse__list::before {
-  position: absolute;
-  content: "";
-  top: -48px;
-  left: 108px;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  border: 4px solid var(--color-11);
-  z-index: 10;
-}
-
-.feature__content__reverse {
-  flex-direction: row-reverse;
-  align-items: start;
-  align-items: flex-end;
+.feature__text--reverse {
   padding-bottom: 100px;
-}
-
-.feature__content__reverse ul {
-  margin-bottom: -100px;
-}
-
-.feature__content__reverse h3 {
-  padding-top: 32px;
 }
 
 .feature__text,
 .feature__text--reverse {
-  max-width: 602px;
-}
-
-.feature__text--reverse {
-  max-width: 480px;
-}
-
-.feature__text h3,
-.feature__text--reverse h3 {
-  color: var(--color);
-  margin-bottom: 24px;
-}
-
-.feature__text p,
-.feature__text--reverse p {
-  max-width: 480px;
-  margin-bottom: 40px;
-  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .feature__btn {
@@ -141,4 +64,113 @@
 .feature__btn:hover {
   background-color: var(--color);
   color: var(--color-4);
+}
+
+@media screen and (min-width: 1480px) {
+  .feature__content,
+  .feature__content__reverse {
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
+  }
+
+  .feature__content {
+    align-items: start;
+    padding-left: 15%;
+  }
+
+  .content__list {
+    margin-top: -40px;
+  }
+
+  .content__list,
+  .content__list__reverse {
+    position: relative;
+    box-shadow: var(--shadow-3);
+    width: 430px;
+    height: 548px;
+    border-radius: 20px;
+  }
+
+  .content__list li:first-child,
+  .content__list__reverse:first-child {
+    overflow: visible;
+  }
+
+  .content__list li:nth-child(2),
+  .content__list__reverse li:nth-child(2) {
+    display: flex;
+  }
+
+  .content__list li:first-child,
+  .content__list__reverse li:first-child {
+    position: relative;
+    z-index: 5;
+  }
+
+  .content__list li:nth-child(2) img,
+  .content__list__reverse li:nth-child(2) img {
+    content: "";
+    position: absolute;
+    z-index: 1;
+  }
+
+  .content__list li:nth-child(2) img {
+    top: 168px;
+    left: -128px;
+  }
+
+  .content__list__reverse li:nth-child(2) img {
+    top: -26px;
+    left: 160px;
+  }
+
+  .content__list__reverse::before {
+    position: absolute;
+    content: "";
+    top: -48px;
+    left: 108px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 4px solid var(--color-11);
+    z-index: 10;
+  }
+
+  .feature__content__reverse {
+    flex-direction: row-reverse;
+    align-items: start;
+    align-items: flex-end;
+    padding-bottom: 100px;
+  }
+
+  .feature__content__reverse ul {
+    margin-bottom: -100px;
+  }
+
+  .feature__content__reverse h3 {
+    padding-top: 32px;
+  }
+
+  .feature__text,
+  .feature__text--reverse {
+    max-width: 602px;
+  }
+
+  .feature__text--reverse {
+    max-width: 480px;
+  }
+
+  .feature__text h3,
+  .feature__text--reverse h3 {
+    color: var(--color);
+    margin-bottom: 24px;
+  }
+
+  .feature__text p,
+  .feature__text--reverse p {
+    max-width: 480px;
+    margin-bottom: 40px;
+    color: var(--color);
+  }
 }

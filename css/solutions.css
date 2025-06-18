@@ -1,3 +1,7 @@
+.solution {
+  padding-bottom: 40px;
+}
+
 .solution__list {
   display: flex;
   flex-direction: column;
