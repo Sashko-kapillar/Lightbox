@@ -30,9 +30,15 @@ body {
 }
 
 .container {
-  width: 1560px;
+  width: 415px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1480px) {
+  .container {
+    width: 1560px;
+  }
 }
 
 button {
