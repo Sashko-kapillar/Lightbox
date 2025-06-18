@@ -64,24 +64,41 @@ h2 {
 }
 
 h2 {
-  font-size: 55px;
+  font-size: 28px;
   line-height: 127%;
+  max-width: 320px;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-family: var(--font4), sans-serif;
   font-weight: 700;
   color: var(--black);
-  font-size: 36px;
+  font-size: 24px;
   line-height: 100%;
 }
 
 p {
   font-family: var(--font3) sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
+  font-size: 14px;
+  line-height: 137%;
   color: var(--color-12);
+}
+
+@media screen and (min-width: 1480px) {
+  h2 {
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 167%;
+  }
 }
 
 .section {
