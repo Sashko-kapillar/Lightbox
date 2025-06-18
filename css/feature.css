@@ -152,6 +152,10 @@
     padding-top: 32px;
   }
 
+  .feature__text {
+    padding-top: 100px;
+  }
+
   .feature__text,
   .feature__text--reverse {
     max-width: 602px;
