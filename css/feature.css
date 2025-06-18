@@ -55,6 +55,11 @@
   gap: 16px;
 }
 
+.feature__text p,
+.feature__text--reverse p {
+  color: var(--color);
+}
+
 .feature__btn {
   background-color: var(--color-4);
   border: 2px solid var(--color-4);
