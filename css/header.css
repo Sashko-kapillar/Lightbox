@@ -1,21 +1,6 @@
-/* .header {
-  display: flex;
-  height: 56px;
-  width: 100%;
-  background-color: var(--color-1);
-  margin-top: 32px;
-}
-
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 56px;
-  gap: 20px;
-  border: 1px solid var(--color);
-}*/
-
 .header {
+  display: flex;
+  align-items: center;
   height: 56px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -25,6 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo__mark {
@@ -47,6 +37,7 @@
 .header__burger-menu {
   display: flex;
   position: relative;
+  width: 44px;
 }
 
 .header__burger-menu,
@@ -69,51 +60,4 @@
 
 .header__burger-menu::after {
   bottom: 8px;
-}
-
-@media screen and (min-width: 1480px) {
-  .logo {
-    margin-right: 124px;
-  }
-
-  .nav {
-    display: flex;
-    font-family: var(--font3);
-    font-weight: 500;
-    font-size: 18px;
-    margin-right: 15%;
-  }
-
-  .nav__list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .address {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .login-button {
-    font-family: var(--font3);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .login-button:hover {
-    color: var(--color-6_1);
-    transform: scale(1.2);
-  }
-
-  .contact__start-btn {
-    min-width: 172px;
-    width: fit-content;
-  }
-
-  .header__burger-menu {
-    display: none;
-  }
 }
