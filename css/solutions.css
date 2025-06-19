@@ -15,7 +15,7 @@
   align-items: start;
 }
 
-.solution__item img {
+picture img {
   border-radius: 20px;
 }
 
@@ -119,6 +119,7 @@
     position: absolute;
     top: -132px;
     left: 268px;
+    max-width: 114px;
   }
 
   .solution__img-small--right li:nth-child(2) {
@@ -126,6 +127,7 @@
     position: absolute;
     top: -28px;
     left: 32px;
+    max-width: 140px;
   }
 
   .solution__img-small--right li:last-child {
@@ -133,7 +135,7 @@
     position: absolute;
     top: 116px;
     left: 324px;
-    min-width: 170px;
+    max-width: 170px;
   }
 
   .solution__item {
