@@ -56,7 +56,7 @@
   }
 
   .cta::after {
-    top: 196px;
+    bottom: -24px;
     right: 146px;
     width: 88px;
     height: 88px;

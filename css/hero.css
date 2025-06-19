@@ -76,10 +76,22 @@ h1 {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1480px) {
   .hero {
     display: flex;
     overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .hero__content {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 85px;
+    max-width: 818px;
   }
 
   .hero__image {
@@ -144,23 +156,6 @@ h1 {
     font-size: 18px;
     font-weight: 500;
     max-width: 82px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .hero {
-    margin-bottom: 0;
-  }
-
-  .hero__content {
-    flex: 0 0 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 85px;
-    max-width: 818px;
   }
 
   .hero__description {
