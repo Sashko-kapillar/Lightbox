@@ -27,6 +27,10 @@
   gap: 8px;
 }
 
+.solution__img-small--right li {
+  width: 200px;
+}
+
 @media screen and (min-width: 1480px) {
   .solution {
     margin-bottom: 124px;
