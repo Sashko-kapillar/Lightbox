@@ -23,6 +23,13 @@ picture img {
   gap: 8px;
 }
 
+.solution__list--small li,
+.solution__img-small--right li {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: var(--shadow-2);
+}
+
 .solution__img-small--right {
   gap: 8px;
 }
@@ -62,10 +69,7 @@ picture img {
   }
 
   .solution__list--small li {
-    overflow: hidden;
-    border-radius: 10px;
     min-width: 105px;
-    box-shadow: var(--shadow-2);
   }
 
   .solution__list--small li:first-child {
@@ -106,12 +110,6 @@ picture img {
   .solution__img-small--right {
     display: flex;
     position: relative;
-  }
-
-  .solution__img-small--right li {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: var(--shadow-2);
   }
 
   .solution__img-small--right li:first-child {
