@@ -41,7 +41,7 @@
   position: absolute;
   content: "";
   z-index: 5;
-  left: 26px;
+  left: 16px;
   top: 56px;
   width: 312px;
   min-height: 160px;
@@ -51,7 +51,7 @@
   position: absolute;
   content: "";
   top: 108px;
-  left: 56px;
+  left: 46px;
   width: 300px;
   height: 132px;
   z-index: -1;
@@ -124,11 +124,13 @@
   }
 
   .reviews__card--back {
+    left: 26px;
     width: 678px;
     height: 363px;
   }
 
   .reviews__card--back2 {
+    left: 56px;
     width: 618px;
     height: 332px;
   }

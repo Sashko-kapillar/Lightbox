@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
   /* scrollbar-gutter: stable; */
 }
 
@@ -19,16 +20,6 @@ body {
   /* scrollbar-gutter: stable; */
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*  min-height: 100vh;*/
-  width: 768px;
-  margin: 0 auto;
-}
-
 .container {
   width: 415px;
   padding: 0 20px;
@@ -36,9 +27,9 @@ body {
 }
 
 @media screen and (min-width: 1480px) {
-  .wrapper {
+  /* .wrapper {
     width: 1960px;
-  }
+  } */
 
   .container {
     width: 1560px;
