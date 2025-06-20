@@ -94,3 +94,26 @@
   z-index: -1;
   width: 164px;
 }
+
+@media screen and (min-width: 768px) {
+  .reviews__card {
+    max-width: 768px;
+    padding: 100px 80px;
+  }
+
+  .reviews__card--back {
+    left: 16px;
+    top: 140px;
+    width: 532px;
+  }
+
+  .reviews__card--back2 {
+    left: 32px;
+    top: 192px;
+    width: 500px;
+  }
+
+  .reviews__card svg {
+    top: 20px;
+  }
+}

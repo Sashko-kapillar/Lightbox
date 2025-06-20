@@ -49,7 +49,8 @@ a {
 img,
 picture {
   max-width: 100%;
-  display: inline-block;
+  display: block;
+  height: auto;
 }
 
 button,

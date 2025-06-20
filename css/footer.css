@@ -112,6 +112,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer::before {
+    top: 84px;
+  }
+
+  .footer__list--header {
+    flex-direction: row;
+  }
+
+  .footer__content {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1480px) {
   .footer__end {
     justify-content: space-between;
     padding-top: 28px;

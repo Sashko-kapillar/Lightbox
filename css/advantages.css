@@ -74,3 +74,30 @@
 .advantages__item:nth-child(3) h4::after {
   background-color: var(--color);
 }
+
+@media screen and (min-width: 768px) {
+  .advantages__container h3,
+  .advantages__description {
+    max-width: 100%;
+  }
+
+  .advantages__item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__item--description {
+    text-align: center;
+  }
+
+  .advantages__item h4 {
+    max-width: 192px;
+    text-align: center;
+  }
+
+  .advantages__item h4::after {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+  }
+}

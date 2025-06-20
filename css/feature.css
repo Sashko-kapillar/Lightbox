@@ -39,6 +39,11 @@
   overflow: hidden;
 }
 
+.feature__text h3,
+.feature__text--reverse h3 {
+  color: var(--color);
+}
+
 .feature__text,
 .feature__text--reverse {
   display: flex;
@@ -54,7 +59,7 @@
 .feature__btn {
   background-color: var(--color-4);
   border: 2px solid var(--color-4);
-  padding: 20px 24px;
+  padding: 12px 20px;
 }
 
 .feature__btn:hover {
@@ -63,6 +68,26 @@
 }
 
 @media screen and (min-width: 768px) {
+  .feature__content {
+    flex-direction: row;
+  }
+
+  .feature__content__reverse {
+    flex-direction: row-reverse;
+  }
+
+  .content__list,
+  .content__list__reverse {
+    flex: 0 0 50%;
+  }
+
+  .feature__text,
+  .feature__text--reverse {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1480px) {
   .feature {
     background: url(../images/feature/bg/radius.png);
     background-size: 100% 100%;
@@ -72,5 +97,9 @@
 
   .feature__text--reverse {
     padding-bottom: 100px;
+  }
+
+  .feature__btn {
+    padding: 20px 24px;
   }
 }
