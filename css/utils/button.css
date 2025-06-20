@@ -3,7 +3,7 @@
   padding: 12px 20px;
   font-family: var(--font3), sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   background-color: transparent;
   color: var(--black);
@@ -27,4 +27,18 @@
   color: var(--color);
   border-color: var(--color-6_1);
   box-shadow: var(--shadow-4);
+}
+
+@media screen and (min-width: 768px) {
+  .btn,
+  .btn__bg {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .btn,
+  .btn__bg {
+    font-size: 18px;
+  }
 }

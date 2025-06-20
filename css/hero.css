@@ -1,15 +1,10 @@
 h1 {
-  font-size: 35px;
-  line-height: 127%;
   margin-bottom: 28px;
   max-width: 320px;
 }
 
 .hero__description {
   font-family: var(--font3);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 127%;
   color: var(--color-12);
   margin-bottom: 24px;
 }
@@ -29,7 +24,6 @@ h1 {
 .hero__btn--start-today {
   background-color: var(--color-4);
   border: none;
-  margin-right: 12px;
 }
 
 .hero__image {
@@ -72,7 +66,15 @@ h1 {
     flex-direction: row;
   }
 
-  .hero__btn--start-today {
-    font-size: 14px;
+  .video-play {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .hero__body {
+    padding-right: 44px;
   }
 }

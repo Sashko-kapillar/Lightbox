@@ -62,3 +62,18 @@ textarea {
   background: none;
   outline: none;
 }
+
+/* =============================
+   10. Focus (Accessibility)
+============================= */
+:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+  padding: 2px;
+}
+/* Applies outline only during keyboard navigation */
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+/* Avoids showing outlines on mouse interaction */

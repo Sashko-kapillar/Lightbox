@@ -61,3 +61,37 @@
 .header__burger-menu::after {
   bottom: 8px;
 }
+
+@media screen and (min-width: 1480px) {
+  .header__burger-menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .address {
+    display: flex;
+    gap: 32px;
+  }
+
+  .header {
+    height: 56px;
+  }
+
+  .nav__list {
+    gap: 34px;
+  }
+
+  .header__login-btn {
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header__login-btn:hover,
+  .solution__btn:hover {
+    transform: scale(105%);
+    color: var(--color-4);
+  }
+}

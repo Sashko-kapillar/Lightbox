@@ -72,6 +72,7 @@
 
 .reviews__card--arrow svg:hover {
   fill: var(--color-4);
+  transform: rotate(360deg);
 }
 
 .reviews__card p {
@@ -103,7 +104,7 @@
 
   .reviews__card--back {
     left: 16px;
-    top: 140px;
+    bottom: 104px;
     width: 532px;
   }
 
@@ -115,5 +116,96 @@
 
   .reviews__card svg {
     top: 20px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .reviews {
+    padding-top: 128px;
+  }
+
+  .reviews__container {
+    position: relative;
+  }
+
+  .reviews__container h2 {
+    margin-bottom: 44px;
+  }
+
+  .reviews__img {
+    position: absolute;
+  }
+
+  .reviews__img:first-child {
+    top: 112px;
+    left: 176px;
+  }
+
+  .reviews__img:nth-child(2) {
+    top: 324px;
+    left: -112px;
+  }
+
+  .reviews__img:nth-child(3) {
+    bottom: 24px;
+    left: 48px;
+  }
+
+  .reviews__img:nth-child(4) {
+    top: 80px;
+    right: 252px;
+  }
+
+  .reviews__img:nth-child(5) {
+    top: 332px;
+    right: 36px;
+  }
+
+  .reviews__img:nth-child(6) {
+    bottom: -64px;
+    right: 228px;
+  }
+
+  .reviews__img:nth-child(7) {
+    bottom: -64px;
+    left: 228px;
+  }
+
+  .reviews__img:last-child {
+    top: 272px;
+    right: 260px;
+  }
+  .reviews__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 730px;
+    padding: 100px 80px 172px;
+  }
+
+  .reviews__card svg {
+    width: 234px;
+    top: -8px;
+  }
+
+  .reviews__card--back {
+    left: 16px;
+    top: 214px;
+    width: 698px;
+  }
+
+  .reviews__card--back2 {
+    left: 32px;
+    top: 306px;
+    width: 666px;
+  }
+
+  .reviews__card p {
+    font-size: 26px;
+    line-height: 147%;
+  }
+
+  .reviews__list {
+    display: flex;
   }
 }

@@ -89,17 +89,74 @@
 
 @media screen and (min-width: 1480px) {
   .feature {
-    background: url(../images/feature/bg/radius.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-bottom: 0;
+  }
+
+  .feature__container {
+    padding: 0 126px;
+  }
+
+  .feature__content,
+  .feature__content__reverse {
+    gap: 72px;
+  }
+
+  .feature__text {
+    max-width: 600px;
   }
 
   .feature__text--reverse {
-    padding-bottom: 100px;
+    max-width: 504px;
+    align-items: end;
+  }
+
+  .content__list,
+  .content__list__reverse {
+    position: relative;
+    flex: none;
+    z-index: 30;
+  }
+
+  .content__list__reverse {
+    align-items: end;
+  }
+
+  .content__list {
+    margin-top: -104px;
+  }
+
+  .feature__text--reverse {
+    padding-bottom: 40px;
+    align-items: start;
+  }
+
+  .feature__text p,
+  .feature__text--reverse p {
+    margin-bottom: 40px;
   }
 
   .feature__btn {
     padding: 20px 24px;
+  }
+
+  .content__list li:nth-child(2),
+  .content__list__reverse li:nth-child(2) {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .content__list li:nth-child(2) {
+    top: 164px;
+    left: -124px;
+  }
+
+  .content__list__reverse li:nth-child(2) {
+    top: -24px;
+    right: -184px;
+  }
+
+  .content__list__reverse li:nth-child(2) img {
+    border-radius: 0;
   }
 }
