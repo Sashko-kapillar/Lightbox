@@ -48,6 +48,11 @@ picture img {
 }
 
 @media screen and (min-width: 768px) {
+  .solution {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .solution__wrapper {
     display: flex;
     flex-direction: column;
@@ -143,7 +148,6 @@ picture img {
   .solution {
     position: relative;
     z-index: 20;
-    padding-bottom: 0;
     min-width: 100%;
   }
 
