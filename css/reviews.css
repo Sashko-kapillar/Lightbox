@@ -167,8 +167,8 @@
   }
 
   .reviews__img:nth-child(7) {
-    bottom: -64px;
-    left: 228px;
+    bottom: 0;
+    left: 268px;
   }
 
   .reviews__img:last-child {

@@ -11,7 +11,13 @@ body {
 }
 
 .container {
-  width: 360px;
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+[class*="__container"] {
+  max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -25,6 +31,7 @@ button {
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
+  flex-shrink: 0;
 }
 
 a {
@@ -77,9 +84,19 @@ p {
   color: var(--color-12);
 }
 
+@media (any-hover: hover), (pointer: fine) {
+  .menu__link:hover {
+    color: #f26522;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
-    width: 808px;
+    max-width: 808px;
+  }
+
+  [class*="__container"] {
+    max-width: 808px;
   }
 
   h1 {
@@ -106,7 +123,11 @@ p {
 
 @media screen and (min-width: 1480px) {
   .container {
-    width: 1520px;
+    max-width: 1520px;
+  }
+
+  [class*="__container"] {
+    max-width: 1520px;
   }
 
   .section {

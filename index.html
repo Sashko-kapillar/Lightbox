@@ -9,73 +9,79 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper container">
-        <a
-          href="index.html"
-          class="logo"
-          title="Home"
-          aria-label="Home"
-          aria-hidden="true"
-        >
-          <svg
-            width="38"
-            height="44"
-            viewBox="0 0 36 36"
+      <div class="header__container">
+        <div class="header__content">
+          <a
+            href="index.html"
+            class="logo"
+            title="Home"
+            aria-label="Home"
             aria-hidden="true"
-            role="img"
-            class="logo__mark"
           >
-            <use href="./images/icons.svg#icon-Logomark"></use>
-          </svg>
-          <svg
-            width="117"
-            height="38"
-            viewBox="0 0 117 36"
-            aria-hidden="true"
-            role="img"
-            class="logo__text"
+            <svg
+              width="38"
+              height="44"
+              viewBox="0 0 36 36"
+              aria-hidden="true"
+              role="img"
+              class="logo__mark"
+            >
+              <use href="./images/icons.svg#icon-Logomark"></use>
+            </svg>
+            <svg
+              width="117"
+              height="38"
+              viewBox="0 0 117 36"
+              aria-hidden="true"
+              role="img"
+              class="logo__text"
+            >
+              <use href="./images/icons.svg#icon-Logotype"></use>
+            </svg>
+          </a>
+          <nav class="nav" aria-label="Main Navigation" role="navigation">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#solutions">Solutions</a></li>
+              <li class="nav__item"><a href="#features">Features</a></li>
+              <li class="nav__item"><a href="#aboutus">About Us</a></li>
+              <li class="nav__item"><a href="#blog">Blog</a></li>
+              <li class="nav__item"><a href="#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div
+            class="header__address"
+            aria-label="Contact Information"
+            role="contentinfo"
           >
-            <use href="./images/icons.svg#icon-Logotype"></use>
-          </svg>
-        </a>
-        <nav class="nav" aria-label="Main Navigation" role="navigation">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#solutions">Solutions</a></li>
-            <li class="nav__item"><a href="#features">Features</a></li>
-            <li class="nav__item"><a href="#aboutus">About Us</a></li>
-            <li class="nav__item"><a href="#blog">Blog</a></li>
-            <li class="nav__item"><a href="#contactus">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div
-          class="address"
-          aria-label="Contact Information"
-          role="contentinfo"
-        >
-          <button
-            class="contact-button btn"
-            type="button"
-            aria-label="Call or Email Now"
-          >
-            <span>Call/Email Now</span>
-          </button>
-          <button class="header__login-btn" type="button" aria-label="Log In">
-            Log In
-          </button>
-          <button
-            class="contact__start-btn btn__bg"
-            type="button"
-            aria-label="Get Started"
-          >
-            Get Started
-          </button>
+            <button
+              class="header__address-contact-btn btn"
+              type="button"
+              aria-label="Call or Email Now"
+            >
+              <span>Call/Email Now</span>
+            </button>
+            <button
+              class="header__address-login-btn"
+              type="button"
+              aria-label="Log In"
+            >
+              Log In
+            </button>
+            <button
+              class="contact__start-btn btn__bg"
+              type="button"
+              aria-label="Get Started"
+            >
+              Get Started
+            </button>
+          </div>
+          <button type="button" class="header__burger-menu"></button>
         </div>
-        <button type="button" class="header__burger-menu"></button>
       </div>
     </header>
     <main class="main">
       <section class="hero section" aria-label="Hero Section" role="banner">
-        <div class="hero__container container">
+        <div class="hero__container">
           <div class="hero__content__wrapper">
             <div class="hero__content">
               <div class="hero__body">
@@ -87,7 +93,7 @@
                   firms and internal audit teams perform efficient audits,
                   reviews, and compilations.
                 </p>
-                <div class="hero__request__container">
+                <div class="hero__request__wrapper">
                   <button
                     class="hero__btn--start-today btn__bg"
                     aria-label="Open Lightbox"
@@ -223,9 +229,9 @@
       <!-- Features  -->
       <section id="features" class="feature section">
         <h2 class="visually-hidden">Feature</h2>
-        <div class="container feature__container">
+        <div class="feature__container">
           <div class="feature__content">
-            <ul class="content__list" role="list">
+            <ul class="feature__content__list" role="list">
               <li>
                 <img
                   src="./images/feature/feat-left-1x.jpg"
@@ -255,12 +261,12 @@
             </div>
           </div>
           <div class="feature__content__reverse">
-            <ul class="content__list__reverse" role="list">
+            <ul class="feature__content__list__reverse" role="list">
               <li>
                 <img
                   src="./images/feature/feat-right-1x.jpg"
                   alt="Feature image"
-                  class="content__list__reverse--img"
+                  class="feature__content__list__reverse--img"
                 />
               </li>
               <li>
@@ -290,7 +296,7 @@
         <svg aria-hidden="true" role="img" class="curve">
           <use href="./images/icons.svg#icon-marin"></use>
         </svg>
-        <div class="container advantages__container">
+        <div class="advantages__container">
           <div>
             <h2 class="advantages__title">Our Advantages</h2>
             <h3>Explore the Modern Connected Risk Platform</h3>
@@ -298,7 +304,7 @@
               Built to provide the efficiency, connectedness, and visibility you
               need to stay ahead of today’s dynamic risk environment.
             </p>
-            <ul role="list" class="advantages__list">
+            <ul class="advantages__list">
               <li class="advantages__item">
                 <img
                   src="./images/advantages/risk.png"
@@ -352,7 +358,7 @@
       </section>
       <!-- Reviews -->
       <section id="reviews" class="section reviews">
-        <div class="container reviews__container">
+        <div class="reviews__container">
           <h2>
             Trusted by 120+ <br />
             Forward-thinking Audit, Risk, and Compliance Teams
@@ -427,7 +433,7 @@
       </section>
       <!--   Aboutus and support   -->
       <section id="aboutus" class="section support">
-        <div class="container support__container">
+        <div class="support__container">
           <h2>Supported by real people</h2>
           <p class="support__description">
             We are leading cloud-based platform transforming how enterprises
@@ -504,7 +510,7 @@
       </section>
       <!--   CTA   -->
       <section id="cta" class="section cta">
-        <div class="container cta__container">
+        <div class="cta__container">
           <h2 class="visually-hidden">Ready to Get Started?</h2>
           <h3 class="cta__subtitle">
             Drive efficiency and value
@@ -517,10 +523,10 @@
       </section>
     </main>
     <!--   Footer   -->
-    <footer class="footer section" role="contentinfo">
-      <div class="footer__container container">
+    <footer class="footer section">
+      <div class="footer__container">
         <div class="footer__header">
-          <ul class="footer__list--header">
+          <ul class="footer__header__list">
             <li class="header__guarantee">
               <svg
                 width="40"
@@ -615,7 +621,7 @@
         </div>
       </div>
       <div class="footer__end">
-        <div class="footer__end__wrapper container">
+        <div class="footer__end__wrapper footer__end__container">
           <div class="footer__end--social">
             <ul>
               <li>

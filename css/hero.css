@@ -3,13 +3,19 @@ h1 {
   max-width: 320px;
 }
 
+.hero__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .hero__description {
   font-family: var(--font3);
   color: var(--color-12);
   margin-bottom: 24px;
 }
 
-.hero__request__container {
+.hero__request__wrapper {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -38,7 +44,6 @@ h1 {
 
   .hero__container {
     display: flex;
-    /* overflow: hidden; */
   }
 
   .hero__body {
@@ -50,31 +55,91 @@ h1 {
     flex: 0 0 100%;
   }
 
-  .hero__image img {
-    max-width: 100%;
-    height: 100%;
-  }
-
   .hero__image {
+    position: relative;
     display: flex;
-    flex: 0 0 50%;
-    transform: translateX(-100%);
-    margin-top: -40px;
+    flex: 0 0 100%;
+    transform: translateX(-50%);
   }
 
-  .hero__request__container {
+  .hero__request__wrapper {
     flex-direction: row;
   }
 
   .video-play {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    content: "";
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    width: 96px;
+    height: 96px;
+    background-color: var(--color-6);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color);
+    z-index: 5;
+  }
+
+  .video-play__text {
+    display: none;
+  }
+
+  .video-play::before {
+    content: "";
+    position: absolute;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: var(--color-6);
+    opacity: 20%;
+  }
+
+  .video-play__btn {
+    position: relative;
+    z-index: 20;
+    fill: var(--color);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .video-play__btn:hover {
+    fill: var(--color-4);
+  }
+
+  .hero__btn--start-today {
+    padding: 16px 24px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .hero__body {
     padding-right: 44px;
+  }
+
+  .video-play {
+    top: 25%;
+    left: 18%;
+    width: 168px;
+    height: 168px;
+  }
+
+  .video-play::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .video-play__btn {
+    padding-top: 20%;
+    padding-left: 10%;
+  }
+
+  .video-play__text {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 80px;
+    text-align: center;
   }
 }

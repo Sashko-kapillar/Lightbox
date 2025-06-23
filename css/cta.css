@@ -1,6 +1,5 @@
 .cta {
   background-color: var(--color-6);
-  padding-bottom: 40px;
 }
 
 .cta__subtitle {
@@ -70,7 +69,7 @@
 
   .cta__container::after {
     right: -252px;
-    bottom: -56px;
+    bottom: -100px;
     width: 88px;
     height: 88px;
     z-index: 1;

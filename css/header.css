@@ -1,15 +1,20 @@
 .header {
   display: flex;
   align-items: center;
-  height: 56px;
   margin-top: 32px;
-  margin-bottom: 32px;
+  width: 100%;
 }
 
-.header__wrapper {
+.header__container {
+  width: 100%;
+}
+
+.header__content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 8px;
 }
 
 .logo {
@@ -30,7 +35,16 @@
   display: none;
 }
 
-.address {
+.nav__item {
+  display: flex;
+}
+
+.nav__item a {
+  flex-shrink: 0;
+  padding: 8px 0;
+}
+
+.header__address {
   display: none;
 }
 
@@ -69,9 +83,10 @@
 
   .nav {
     display: flex;
+    max-width: 520px;
   }
 
-  .address {
+  .header__address {
     display: flex;
     gap: 32px;
   }
@@ -81,15 +96,16 @@
   }
 
   .nav__list {
-    gap: 34px;
+    flex-wrap: wrap;
+    gap: 8px 34px;
   }
 
-  .header__login-btn {
+  .header__address-login-btn {
     font-size: 18px;
     transition: all 0.3s ease-in-out;
   }
 
-  .header__login-btn:hover,
+  .header__address-login-btn:hover,
   .solution__btn:hover {
     transform: scale(105%);
     color: var(--color-4);
