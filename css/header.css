@@ -109,7 +109,7 @@
 .header__burger-menu
   input:checked
   ~ .header__burger-menu__toogle.header__burger-menu__toogle::before {
-  animation: translateAndRotateBefore 1s ease-out forwards;
+  animation: translateAndRotateBefore 0.4s ease-out forwards;
 }
 
 @keyframes translateAndRotateBefore {
@@ -133,7 +133,7 @@
 .header__burger-menu
   input:checked
   ~ .header__burger-menu__toogle.header__burger-menu__toogle::after {
-  animation: translateAndRotateAfter 1s ease-out forwards;
+  animation: translateAndRotateAfter 0.4s ease-out forwards;
 }
 
 @keyframes translateAndRotateAfter {
