@@ -1,8 +1,6 @@
 .header {
   display: flex;
-  align-items: center;
   margin-top: 32px;
-  width: 100%;
 }
 
 .header__container {
@@ -14,7 +12,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .logo {
@@ -48,32 +47,111 @@
   display: none;
 }
 
+/*   toogle animation   */
+
 .header__burger-menu {
+  width: 32px;
+  height: 44px;
+  cursor: pointer;
   display: flex;
-  position: relative;
-  width: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
-.header__burger-menu,
-.header__burger-menu::before,
-.header__burger-menu::after {
+.header__burger-menu__toogle {
+  display: flex;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__burger-menu__toogle,
+.header__burger-menu__toogle::before,
+.header__burger-menu__toogle::after {
   width: 32px;
   height: 3px;
   background-color: var(--color-6_1);
 }
 
-.header__burger-menu::before,
-.header__burger-menu::after {
+.header__burger-menu__toogle::before,
+.header__burger-menu__toogle::after {
   content: "";
   position: absolute;
+  transition: transform 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
-.header__burger-menu::before {
+.header__burger-menu__toogle::before {
   top: 8px;
 }
 
-.header__burger-menu::after {
+.header__burger-menu__toogle::after {
   bottom: 8px;
+}
+
+.header__burger-menu:hover
+  .header__burger-menu__toogle.header__burger-menu__toogle::after,
+.header__burger-menu:hover
+  .header__burger-menu__toogle.header__burger-menu__toogle::before {
+  background-color: var(--color-6);
+}
+
+.header__burger-menu:hover .header__burger-menu__toogle {
+  background-color: var(--color-6);
+  /* transform: scale(115%); */
+}
+
+.header__burger-menu
+  input:checked
+  ~ .header__burger-menu__toogle.header__burger-menu__toogle {
+  background-color: transparent;
+}
+
+.header__burger-menu
+  input:checked
+  ~ .header__burger-menu__toogle.header__burger-menu__toogle::before {
+  animation: translateAndRotateBefore 1s ease-out forwards;
+}
+
+@keyframes translateAndRotateBefore {
+  0% {
+    transform: translateY(0) rotate(0deg); /* Початковий стан */
+  }
+  20% {
+    /* translateY закінчується на 20% від загальної тривалості (1s * 0.2 = 0.2s) */
+    transform: translateY(-8px) rotate(0deg);
+  }
+  40% {
+    /* Rotate починається тут, після 0.2s */
+    transform: translateY(-8px) rotate(0deg);
+  }
+  100% {
+    /* Rotate закінчується на 100% від загальної тривалості */
+    transform: translateY(-8px) rotate(135deg);
+  }
+}
+
+.header__burger-menu
+  input:checked
+  ~ .header__burger-menu__toogle.header__burger-menu__toogle::after {
+  animation: translateAndRotateAfter 1s ease-out forwards;
+}
+
+@keyframes translateAndRotateAfter {
+  0% {
+    transform: translateY(0) rotate(0deg); /* Початковий стан */
+  }
+  20% {
+    /* translateY закінчується на 20% від загальної тривалості (1s * 0.2 = 0.2s) */
+    transform: translateY(8px) rotate(0deg);
+  }
+  40% {
+    /* Rotate починається тут, після 0.2s */
+    transform: translateY(8px) rotate(0deg);
+  }
+  100% {
+    /* Rotate закінчується на 100% від загальної тривалості */
+    transform: translateY(8px) rotate(45deg);
+  }
 }
 
 @media screen and (min-width: 1480px) {
