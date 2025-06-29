@@ -98,11 +98,13 @@ p {
 }
 
 @media (any-hover: hover) and (pointer: fine) {
+  .header__burger-menu {
+    transition: background-color 0.3s ease-in-out;
+  }
+
   .header__burger-menu:hover .header__burger-menu__toogle,
-  .header__burger-menu:hover
-    .header__burger-menu__toogle.header__burger-menu__toogle::after,
-  .header__burger-menu:hover
-    .header__burger-menu__toogle.header__burger-menu__toogle::before {
+  .header__burger-menu:hover .header__burger-menu__toogle::after,
+  .header__burger-menu:hover .header__burger-menu__toogle::before {
     background-color: var(--color-6);
   }
 }
